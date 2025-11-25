@@ -1,0 +1,22 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX oset: <http://oset.org/ontologies/abr/>
+
+SELECT ?state ?formLabel ?docClass ?docLabel
+WHERE {
+  ?form a oset:ABRForm ;
+        rdfs:label ?formLabel ;
+        rdfs:subClassOf ?restriction .
+
+  ?restriction a owl:Restriction ;
+               owl:onProperty oset:requiresDocumentation ;
+               owl:someValuesFrom ?docClass .
+
+  ?docClass rdfs:label ?docLabel .
+
+  # derive state code from the local name, e.g. oset:WI_Form → "WI"
+  BIND(STRAFTER(STR(?form), "avr/") AS ?localName) .
+  BIND(REPLACE(?localName, "_Form$", "") AS ?state) .
+}
+ORDER BY ?state ?docLabel

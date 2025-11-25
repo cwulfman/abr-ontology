@@ -1,0 +1,21 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX oset: <http://oset.org/ontologies/avr/>
+
+SELECT ?state ?form
+WHERE {
+  ?form a oset:ABRForm .
+
+  BIND(STRAFTER(STR(?form), "avr/") AS ?localName) .
+  BIND(REPLACE(?localName, "_Form$", "") AS ?state) .
+
+  FILTER NOT EXISTS {
+    ?form rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty oset:requiresDocumentation ;
+      owl:someValuesFrom ?docClass
+    ] .
+  }
+}
+ORDER BY ?state

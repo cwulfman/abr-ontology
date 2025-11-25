@@ -2,7 +2,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-@prefix oset: <http://oset.org/ontologies/avr/> .
+@prefix oset: <http://oset.org/ontologies/abr/> .
 
 oset: a owl:Ontology ;
     rdfs:label "Absentee Ballot Request Forms Ontology" ;
@@ -1608,3 +1608,449 @@ oset:WI_Form a owl:Class ;
           owl:onProperty oset:requiresDocumentation ;
           owl:someValuesFrom oset:RequiredPhotoID
         ] .
+
+
+#################################################################
+# Required documentation axioms generated from prose JSON
+#################################################################
+
+# AK required accompanying documentation inferred from prose
+oset:AK_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] .
+
+# AL required accompanying documentation inferred from prose
+oset:AL_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# AR required accompanying documentation inferred from prose
+oset:AR_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# FL required accompanying documentation inferred from prose
+oset:FL_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# GA required accompanying documentation inferred from prose
+oset:GA_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# IN required accompanying documentation inferred from prose
+oset:IN_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# KS required accompanying documentation inferred from prose
+oset:KS_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] .
+
+# LA required accompanying documentation inferred from prose
+oset:LA_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] .
+
+# MD required accompanying documentation inferred from prose
+oset:MD_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# MI required accompanying documentation inferred from prose
+oset:MI_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# MO required accompanying documentation inferred from prose
+oset:MO_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] .
+
+# MT required accompanying documentation inferred from prose
+oset:MT_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# NC required accompanying documentation inferred from prose
+oset:NC_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# ND required accompanying documentation inferred from prose
+oset:ND_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] .
+
+# NE required accompanying documentation inferred from prose
+oset:NE_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# NH required accompanying documentation inferred from prose
+oset:NH_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredNotary
+        ] .
+
+# NJ required accompanying documentation inferred from prose
+oset:NJ_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# NY required accompanying documentation inferred from prose
+oset:NY_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# OH required accompanying documentation inferred from prose
+oset:OH_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] .
+
+# OK required accompanying documentation inferred from prose
+oset:OK_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# PA required accompanying documentation inferred from prose
+oset:PA_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] .
+
+# SD required accompanying documentation inferred from prose
+oset:SD_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredPhotoID
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredNotary
+        ] .
+
+# TX required accompanying documentation inferred from prose
+oset:TX_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+# WI required accompanying documentation inferred from prose
+oset:WI_Form rdfs:subClassOf
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredWitnessSignature
+        ] ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:requiresDocumentation ;
+          owl:someValuesFrom oset:RequiredAgentCertification
+        ] .
+
+
+#################################################################
+# Link ABR forms to issuing states
+#################################################################
+
+oset:AK_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:AK_State
+    ] .
+
+oset:AL_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:AL_State
+    ] .
+
+oset:AR_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:AR_State
+    ] .
+
+oset:CT_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:CT_State
+    ] .
+
+oset:DE_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:DE_State
+    ] .
+
+oset:FL_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:FL_State
+    ] .
+
+oset:GA_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:GA_State
+    ] .
+
+oset:IA_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:IA_State
+    ] .
+
+oset:ID_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:ID_State
+    ] .
+
+oset:IN_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:IN_State
+    ] .
+
+oset:KS_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:KS_State
+    ] .
+
+oset:LA_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:LA_State
+    ] .
+
+oset:MA_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MA_State
+    ] .
+
+oset:MD_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MD_State
+    ] .
+
+oset:ME_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:ME_State
+    ] .
+
+oset:MI_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MI_State
+    ] .
+
+oset:MN_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MN_State
+    ] .
+
+oset:MO_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MO_State
+    ] .
+
+oset:MT_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:MT_State
+    ] .
+
+oset:NC_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NC_State
+    ] .
+
+oset:ND_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:ND_State
+    ] .
+
+oset:NE_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NE_State
+    ] .
+
+oset:NH_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NH_State
+    ] .
+
+oset:NJ_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NJ_State
+    ] .
+
+oset:NM_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NM_State
+    ] .
+
+oset:NY_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:NY_State
+    ] .
+
+oset:OH_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:OH_State
+    ] .
+
+oset:OK_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:OK_State
+    ] .
+
+oset:PA_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:PA_State
+    ] .
+
+oset:SD_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:SD_State
+    ] .
+
+oset:TX_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:TX_State
+    ] .
+
+oset:VT_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:VT_State
+    ] .
+
+oset:WI_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:WI_State
+    ] .
+
+oset:WY_Form rdfs:subClassOf
+    [ a owl:Restriction ;
+      owl:onProperty oset:hasState ;
+      owl:hasValue oset:WY_State
+    ] .

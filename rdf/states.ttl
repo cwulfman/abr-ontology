@@ -1,0 +1,236 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix oset: <http://oset.org/ontologies/abr/> .
+
+#################################################################
+# State class and properties
+#################################################################
+
+oset:State a owl:Class ;
+    rdfs:label "State" .
+
+oset:postalCode a owl:DatatypeProperty ;
+    rdfs:domain oset:State ;
+    rdfs:range  xsd:string ;
+    rdfs:label  "postal code" ;
+    rdfs:comment "The two-letter USPS postal code for a U.S. state." .
+
+oset:hasState a owl:ObjectProperty ;
+    rdfs:domain oset:ABRForm ;
+    rdfs:range  oset:State ;
+    rdfs:label  "has state" ;
+    rdfs:comment "Links an absentee ballot request form type to the state that issues it." ;
+    owl:inverseOf oset:hasABRForm .
+
+oset:hasABRForm a owl:ObjectProperty ;
+    rdfs:domain oset:State ;
+    rdfs:range  oset:ABRForm ;
+    rdfs:label  "has ABR form" ;
+    rdfs:comment "Links a state to its absentee ballot request form type." .
+
+#################################################################
+# State individuals
+#################################################################
+
+oset:AL_State a oset:State ;
+    rdfs:label    "Alabama" ;
+    oset:postalCode "AL" .
+
+oset:AK_State a oset:State ;
+    rdfs:label    "Alaska" ;
+    oset:postalCode "AK" .
+
+oset:AZ_State a oset:State ;
+    rdfs:label    "Arizona" ;
+    oset:postalCode "AZ" .
+
+oset:AR_State a oset:State ;
+    rdfs:label    "Arkansas" ;
+    oset:postalCode "AR" .
+
+oset:CA_State a oset:State ;
+    rdfs:label    "California" ;
+    oset:postalCode "CA" .
+
+oset:CO_State a oset:State ;
+    rdfs:label    "Colorado" ;
+    oset:postalCode "CO" .
+
+oset:CT_State a oset:State ;
+    rdfs:label    "Connecticut" ;
+    oset:postalCode "CT" .
+
+oset:DE_State a oset:State ;
+    rdfs:label    "Delaware" ;
+    oset:postalCode "DE" .
+
+oset:FL_State a oset:State ;
+    rdfs:label    "Florida" ;
+    oset:postalCode "FL" .
+
+oset:GA_State a oset:State ;
+    rdfs:label    "Georgia" ;
+    oset:postalCode "GA" .
+
+oset:HI_State a oset:State ;
+    rdfs:label    "Hawaii" ;
+    oset:postalCode "HI" .
+
+oset:ID_State a oset:State ;
+    rdfs:label    "Idaho" ;
+    oset:postalCode "ID" .
+
+oset:IL_State a oset:State ;
+    rdfs:label    "Illinois" ;
+    oset:postalCode "IL" .
+
+oset:IN_State a oset:State ;
+    rdfs:label    "Indiana" ;
+    oset:postalCode "IN" .
+
+oset:IA_State a oset:State ;
+    rdfs:label    "Iowa" ;
+    oset:postalCode "IA" .
+
+oset:KS_State a oset:State ;
+    rdfs:label    "Kansas" ;
+    oset:postalCode "KS" .
+
+oset:KY_State a oset:State ;
+    rdfs:label    "Kentucky" ;
+    oset:postalCode "KY" .
+
+oset:LA_State a oset:State ;
+    rdfs:label    "Louisiana" ;
+    oset:postalCode "LA" .
+
+oset:ME_State a oset:State ;
+    rdfs:label    "Maine" ;
+    oset:postalCode "ME" .
+
+oset:MD_State a oset:State ;
+    rdfs:label    "Maryland" ;
+    oset:postalCode "MD" .
+
+oset:MA_State a oset:State ;
+    rdfs:label    "Massachusetts" ;
+    oset:postalCode "MA" .
+
+oset:MI_State a oset:State ;
+    rdfs:label    "Michigan" ;
+    oset:postalCode "MI" .
+
+oset:MN_State a oset:State ;
+    rdfs:label    "Minnesota" ;
+    oset:postalCode "MN" .
+
+oset:MS_State a oset:State ;
+    rdfs:label    "Mississippi" ;
+    oset:postalCode "MS" .
+
+oset:MO_State a oset:State ;
+    rdfs:label    "Missouri" ;
+    oset:postalCode "MO" .
+
+oset:MT_State a oset:State ;
+    rdfs:label    "Montana" ;
+    oset:postalCode "MT" .
+
+oset:NE_State a oset:State ;
+    rdfs:label    "Nebraska" ;
+    oset:postalCode "NE" .
+
+oset:NV_State a oset:State ;
+    rdfs:label    "Nevada" ;
+    oset:postalCode "NV" .
+
+oset:NH_State a oset:State ;
+    rdfs:label    "New Hampshire" ;
+    oset:postalCode "NH" .
+
+oset:NJ_State a oset:State ;
+    rdfs:label    "New Jersey" ;
+    oset:postalCode "NJ" .
+
+oset:NM_State a oset:State ;
+    rdfs:label    "New Mexico" ;
+    oset:postalCode "NM" .
+
+oset:NY_State a oset:State ;
+    rdfs:label    "New York" ;
+    oset:postalCode "NY" .
+
+oset:NC_State a oset:State ;
+    rdfs:label    "North Carolina" ;
+    oset:postalCode "NC" .
+
+oset:ND_State a oset:State ;
+    rdfs:label    "North Dakota" ;
+    oset:postalCode "ND" .
+
+oset:OH_State a oset:State ;
+    rdfs:label    "Ohio" ;
+    oset:postalCode "OH" .
+
+oset:OK_State a oset:State ;
+    rdfs:label    "Oklahoma" ;
+    oset:postalCode "OK" .
+
+oset:OR_State a oset:State ;
+    rdfs:label    "Oregon" ;
+    oset:postalCode "OR" .
+
+oset:PA_State a oset:State ;
+    rdfs:label    "Pennsylvania" ;
+    oset:postalCode "PA" .
+
+oset:RI_State a oset:State ;
+    rdfs:label    "Rhode Island" ;
+    oset:postalCode "RI" .
+
+oset:SC_State a oset:State ;
+    rdfs:label    "South Carolina" ;
+    oset:postalCode "SC" .
+
+oset:SD_State a oset:State ;
+    rdfs:label    "South Dakota" ;
+    oset:postalCode "SD" .
+
+oset:TN_State a oset:State ;
+    rdfs:label    "Tennessee" ;
+    oset:postalCode "TN" .
+
+oset:TX_State a oset:State ;
+    rdfs:label    "Texas" ;
+    oset:postalCode "TX" .
+
+oset:UT_State a oset:State ;
+    rdfs:label    "Utah" ;
+    oset:postalCode "UT" .
+
+oset:VT_State a oset:State ;
+    rdfs:label    "Vermont" ;
+    oset:postalCode "VT" .
+
+oset:VA_State a oset:State ;
+    rdfs:label    "Virginia" ;
+    oset:postalCode "VA" .
+
+oset:WA_State a oset:State ;
+    rdfs:label    "Washington" ;
+    oset:postalCode "WA" .
+
+oset:WV_State a oset:State ;
+    rdfs:label    "West Virginia" ;
+    oset:postalCode "WV" .
+
+oset:WI_State a oset:State ;
+    rdfs:label    "Wisconsin" ;
+    oset:postalCode "WI" .
+
+oset:WY_State a oset:State ;
+    rdfs:label    "Wyoming" ;
+    oset:postalCode "WY" .
+
