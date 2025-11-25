@@ -1,0 +1,90 @@
+#+title: ABR Information Vocabulary
+This document accompanies the formal ontology.
+
+The Vocabulary captures two layers of information:
+  - Information explicitly /captured/ on a form in form fields;
+  - Information explicitly /required/ to request an absentee ballot, as specified on the form.
+
+* Information Vocabulary
+** BallotDeliveryInformation
+*** BallotDeliveryAgent
+**** AgentContactInformation
+**** AgentName
+**** AgentRelationship
+*** BallotDeliveryMethod
+*** BallotEmailAddress
+*** BallotFaxNumber
+*** BallotMailingAddress
+*** TemporaryAbsenceAddress
+** ElectionContext
+*** ElectionDate
+*** ElectionParty
+*** ElectionRangeRequest
+*** ElectionType
+*** SpecificElectionIdentifier
+** EligibilityCriteria
+*** AddressConfidentialityProgramParticipation
+*** AgeRequirement
+*** CitizenshipStatus
+*** DisabilityStatus
+*** MilitaryOrOverseasStatus
+*** RegistrationLocation
+*** ResidencyRequirement
+*** StudentStatus
+** PartyAffiliationInformation
+*** BallotStyleRequest
+*** PartyAffiliation
+*** PrimaryBallotChoice
+** PersonalInformation
+*** DemographicInformation
+**** DateOfBirth
+**** Gender
+**** PlaceOfBirth
+*** DirectIdentifiers
+**** EmailAddress
+**** FormerName
+**** MailingAddress
+**** PersonName
+***** FirstName
+***** LastName
+***** MiddleName
+***** NameSuffix
+**** PhoneNumber
+**** ResidentialAddress
+*** IdentificationNumbers
+**** DriverLicenseNumber
+**** Last4SSN
+**** PassportOrMilitaryID
+**** StateIDNumber
+**** TribalID
+**** VoterPIN
+** ReasonForAbsenteeRequest
+*** CaregiverForDisabledPersonReason
+*** ElectionOfficialDutiesReason
+*** ExpectedChildbirthReason
+*** IllnessOrDisabilityReason
+*** IncarcerationReason
+*** NursingHomeReason
+*** OutOfCountyTravelReason
+*** ReligiousConflictReason
+*** WorkConflictReason
+** RequiredDocumentation
+*** CopyOfPhotoID
+*** IDNumbersProvided
+*** ProofOfResidence
+*** StatementNoIDAvailable
+** SignatureAndAttestation
+*** AssistantInformation
+*** AttesterInformation
+*** NotaryInformation
+**** NotaryCommissionExpiration
+**** NotaryName
+*** SignatureDate
+*** VoterSignature
+*** WitnessInformation
+**** WitnessAddress
+**** WitnessName
+
+* Per-State Restrictions
+The ontology a class for each state form that we have.  These classes
+are defined as subclasses of oset:ABRForm with owl:Restrictions defining what type of information each form captures.  

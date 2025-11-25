@@ -1,0 +1,192 @@
+#+PROPERTY: header-args:sparql :url http://localhost:7200/repositories/avr :format text/csv
+
+* Sample SPARQL Queries
+** Forms that require documentation (explicit photo ID)
+#+BEGIN_SRC sparql :url http://localhost:7200/repositories/avr :format text/csv
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:capturesInformationType ;
+                 owl:someValuesFrom oset:CopyOfPhotoID .
+  }
+  ORDER BY ?formClass
+#+end_src
+
+#+RESULTS:
+| formClass                              |
+|----------------------------------------|
+| http://oset.org/ontologies/avr/SD_Form |
+
+** Forms that do not require explicit photo ID documentation
+#+begin_src sparql :url http://localhost:7200/repositories/avr :format text/csv
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:capturesInformationType ;
+                 owl:someValuesFrom oset:CopyOfPhotoID .
+  }
+  ORDER BY ?formClass
+#+end_src
+
+#+RESULTS:
+| formClass                              |
+|----------------------------------------|
+| http://oset.org/ontologies/avr/SD_Form |
+
+** Forms that collect a voter mailing address
+#+begin_src sparql
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:capturesInformationType ;
+                 owl:someValuesFrom ?infoType .
+
+    FILTER (?infoType IN (oset:MailingAddress, oset:BallotMailingAddress))
+  }
+  ORDER BY ?formClass
+#+end_src
+
+#+RESULTS:
+| formClass |
+
+** Forms that explicitly treat military/overseas voters
+#+begin_src sparql :url http://localhost:7200/repositories/avr :format text/csv
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:capturesInformationType ;
+                 owl:someValuesFrom oset:MilitaryOrOverseasStatus .
+  }
+  ORDER BY ?formClass
+#+end_src
+
+#+RESULTS:
+| formClass                              |
+|----------------------------------------|
+| http://oset.org/ontologies/avr/AK_Form |
+| http://oset.org/ontologies/avr/ND_Form |
+| http://oset.org/ontologies/avr/WI_Form |
+
+** Forms that collect date of birth
+;; #+begin_src sparql :url http://localhost:7200/repositories/avr :format text/csv
+#+begin_src sparql
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:capturesInformationType ;
+                 owl:someValuesFrom oset:DateOfBirth .
+  }
+  ORDER BY ?formClass
+#+end_src
+
+#+RESULTS:
+| formClass                              |
+|----------------------------------------|
+| http://oset.org/ontologies/avr/AL_Form |
+| http://oset.org/ontologies/avr/CT_Form |
+| http://oset.org/ontologies/avr/DE_Form |
+| http://oset.org/ontologies/avr/FL_Form |
+| http://oset.org/ontologies/avr/IA_Form |
+| http://oset.org/ontologies/avr/IN_Form |
+| http://oset.org/ontologies/avr/KS_Form |
+| http://oset.org/ontologies/avr/MA_Form |
+| http://oset.org/ontologies/avr/MD_Form |
+| http://oset.org/ontologies/avr/MI_Form |
+| http://oset.org/ontologies/avr/MN_Form |
+| http://oset.org/ontologies/avr/NC_Form |
+| http://oset.org/ontologies/avr/ND_Form |
+| http://oset.org/ontologies/avr/NE_Form |
+| http://oset.org/ontologies/avr/NY_Form |
+| http://oset.org/ontologies/avr/OK_Form |
+| http://oset.org/ontologies/avr/PA_Form |
+| http://oset.org/ontologies/avr/VT_Form |
+| http://oset.org/ontologies/avr/WI_Form |
+| http://oset.org/ontologies/avr/WY_Form |
+
+** List all form classes and the documentation they require
+#+begin_src sparql
+  PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+  PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+  PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass ?docType
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+
+    ?formClass rdfs:subClassOf ?restriction .
+    ?restriction a owl:Restriction ;
+                 owl:onProperty oset:requiresDocumentation ;
+                 owl:someValuesFrom ?docType .
+ }
+  ORDER BY ?formClass ?docType
+#+end_src
+
+#+RESULTS:
+| formClass,docType |
+
+** Forms that require a witness signature, but not a notary
+#+begin_src sparql
+    PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>A
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+    PREFIX oset: <http://oset.org/ontologies/avr/>
+
+  SELECT DISTINCT ?formClass
+  WHERE {
+    ?formClass rdfs:subClassOf oset:AVRForm .
+
+    # Must require witness signature
+    ?formClass rdfs:subClassOf ?rWitness .
+    ?rWitness a owl:Restriction ;
+              owl:onProperty oset:requiresDocumentation ;
+              owl:someValuesFrom oset:RequiredWitnessSignature .
+
+    # Must NOT require notarial seal
+    FILTER NOT EXISTS {
+      ?formClass rdfs:subClassOf ?rNotary .
+      ?rNotary a owl:Restriction ;
+               owl:onProperty oset:requiresDocumentation ;
+               owl:someValuesFrom oset:RequiredNotary .
+    }
+  }
+  ORDER BY ?formClass .
+#+end_src
+
+#+RESULTS:
+| HTTP/1.1 400 |

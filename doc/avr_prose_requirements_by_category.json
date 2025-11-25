@@ -1,0 +1,383 @@
+{
+  "AK": {
+    "RequiredPhotoID": [
+      "Submit a copy of your current driver's license, state ID, passport, birth certifiate, hunting and fishing license or current and valid photo ID with your application."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "I do not have an SSN or AK driver's license or State ID *Birthdate Gender Male Female 2 3 4 5 6 7 8 9 Write political affiliation (For options, see instructions): Military and Overseas Voters Check your status and how you want your ballot sent.",
+      "10 Active member of the Uniformed Services, Merchant Marine, or commissioned corps or an eligible spouse or dependent.",
+      "OR, I am residing temporarily or permanently overseas and I intend to return to Alaska.",
+      "Mail - Complete box 12 Online - Provide email in box 13 Fax - Provide fax in box 13 In remote Alaska or overseas?",
+      "11 Yes, I will be in remote Alaska or overseas where mail service is limited.",
+      "Active military members and spouses, you are exempt from the intent to return to Alaska requirement.",
+      "Military or overseas?",
+      "Overseas citizens, if you do not intend to return to Alaska and wish to participate in federal elections, please contact our office listed under 'Questions?' to receive the correct application."
+    ]
+  },
+  "AL": {
+    "RequiredPhotoID": [
+      "*A copy of your valid photo identification must be accompanied with those applications requiring one.",
+      "I am applying for an absentee ballot because (check at least one box) A Photo ID will be required for the following reasons: I expect to be out of the county or the state on election day.",
+      "A Photo ID will not be required for the following reasons: I am physically incapacitated and will not be able to vote in person on election day."
+    ],
+    "RequiredWitnessSignature": [
+      "Voter's Signature or Mark Only complete this section if voter signs by mark Witness Signature Print Witness Name Only the Voter may hand this application to the Absentee Election Manager."
+    ],
+    "RequiredAgentCertification": [
+      "Only medical emergency absentee applications may be submitted by a voter's designee."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "* Absentee ballots for elections more than 42 days apart must be requested on separate applications, unless you are a member of the armed forces, or a spouse or dependent of such person, or you are a United States citizen residing overseas, or are permanently disabled.",
+      "I am a member of, or a spouse or dependent of a member of, the Armed Forces of the United States or am otherwise similarly qualified to vote absentee pursuant to the Uniformed and Overseas Citizens Absentee Voting Act, 52 U.S.C."
+    ]
+  },
+  "AR": {
+    "RequiredPhotoID": [
+      "A bearer, administrator, or authorized agent must provide a current and valid photo ID to the county clerk and must sign the register, under oath, when picking up or delivering an absentee ballot."
+    ],
+    "RequiredAgentCertification": [
+      "citizens who are active duty If applicable, ensure the designated bearer, administrator, or authorized agent has signed the application in Section 5.",
+      "Please send my ballot to the following address: ____________________________________________________________ ____________________________________________________________ ____________________________________________________________ Picked up via Designated Bearer, Administrator, or Authorized Agent: FOR OFFICE USE ONLY DATE: _________________________ REGISTRANT ID: _________________ PRECINCT: ______________________ ____________________________________ Printed Name of Bearer/Administrator/Agent _____________________________________ Signature of Bearer/Administrator/Agent Note: A designated bearer may obtain or deliver absentee ballots for no more than two (2) voters per election and may only do so within the 15 days before a school election, special election, preferential primary election, or general election OR the 7 days before a runoff election.",
+      "A bearer, administrator, or authorized agent must provide a current and valid photo ID to the county clerk and must sign the register, under oath, when picking up or delivering an absentee ballot."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "UOCAVA: The Uniformed and Overseas Citizen Absentee Voting Act.",
+      "UOCAVA voters are U.S.",
+      "military personnel, their eligible family members, and overseas citizens away from their normal polling location.",
+      "I am a United States citizen residing outside of the territorial limits of the United States (UOCAVA).",
+      "I am an active service member of the United States armed services residing outside of the county (UOCAVA).",
+      "I am a spouse or dependent of an active service member of the United States armed services (UOCAVA).",
+      "o In order to qualify for this option, you must be a UOCAVA voter (See Section 2 on front page).",
+      "Email (Only available for UOCAVA voters)."
+    ]
+  },
+  "CT": {
+    "MilitaryOrOverseasStatus": [
+      "Members of the armed forces and electors temporarily living overseas may also check one choice in section V, if applicable.",
+      "(This section is to be used by Members of the Armed Forces and Electors Temporarily Residing Overseas only): I am a member of the armed forces or the spouse or dependent living where such member is stationed who, due to military contingencies needs additional time to vote by absentee ballot.",
+      "I understand that if the military contingency ceases to exist, I may apply for an additional ballot with candidates printed on it.",
+      "Blank ballots may be sent out to certain military persons beginning 90 days before a regular election and to Connecticut electors temporarily residing outside the U.S.",
+      "and all military persons beginning 45 days before a regular election, approximately 30 days before a primary and as soon as a complete list of candidates and questions is available before a special election."
+    ]
+  },
+  "DE": {
+    "MilitaryOrOverseasStatus": [
+      "Members of the Uniformed Services and ci(cid:415)zens residing outside of the U.S.",
+      "(7) I am otherwise authorized pursuant to the Federal Uniformed and Overseas Ci(cid:415)zens Absentee Vo(cid:415)ng Act to vote by absentee ballot."
+    ]
+  },
+  "FL": {
+    "RequiredAgentCertification": [
+      "If you only want a ballot for specific elections, list them here:_____________________________________________________________________________ Voter's Signature: __________________________________________________________ Date: _____ / _____ / ______ (not required if voter is an absent uniformed services voter or overseas voter, or if request is made by a designee) You must also complete the section below if you are requesting a Vote-by-Mail Ballot for someone else.",
+      "Designee's Name: _________________________________________________________________________________________ Designee's Home Address: _________________________________________________________________________________ City: ________________________________________________ State: ____________________ Zip code: ________________ Designee's driver license or identification card number: last 4 digits of Social Security Number: If no DL or ID, then provide Phone number (optional): ____________________ Email address (optional): ______________________________ Designee's relationship to the voter: Spouse Parent Child Grandparent Grandchild Sibling Parent of voter's spouse Child of voter's spouse Grandparent of voter's spouse Grandchild of voter's spouse Sibling of voter's spouse Voter's legal guardian Designee for a voter with a disability Designee's Signature: _______________________________________________________ Date: _____ / _____ / ______ The voter directly instructed me to make this request for them."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "If you only want a ballot for specific elections, list them here:_____________________________________________________________________________ Voter's Signature: __________________________________________________________ Date: _____ / _____ / ______ (not required if voter is an absent uniformed services voter or overseas voter, or if request is made by a designee) You must also complete the section below if you are requesting a Vote-by-Mail Ballot for someone else."
+    ]
+  },
+  "GA": {
+    "RequiredPhotoID": [
+      "You must provide your date of birth AND 7 OR \u2022 a Georgia Driver's License or Identification Card number \u2022 a copy of an acceptable identification from the list in the instructions.",
+      "Address City State Zip Phone number Email address Date of birth (mm/dd/yyyy) AND Georgia Driver's License Number or State Identification Card Number OR I do not have a Georgia Driver's License or Identification Card and I am providing a copy of acceptable identification below.",
+      "Email Acceptable forms of identification if you do not have a Georgia Driver's License or State Identification Card Number Identification with your photograph: \u2022 United States Passport \u2022 Georgia voter identification card \u2022 Other valid identification card issued by a branch, department, agency, or entity of the State of Georgia, any other state, or the United States authorized by law to issue personal identification \u2022 United States military identification card \u2022 Employee identification card issued by any branch, department, agency, or entity of the United States government, Georgia state government, or Georgia county, municipality, board, authority, or any other entity of the state of Georgia \u2022 Tribal identification card Documents that show your name and address: \u2022 Current utility bill \u2022 Paycheck \u2022 Government check \u2022 Other government document \u2022 Bank statement How to return your absentee ballot application Absentee ballot applications must be received 11 days before the date of the election."
+    ],
+    "RequiredAgentCertification": [
+      "If yes, the assistant must complete this section.",
+      "10 Assistant's name Assistant's signature X Date (mm/dd/yyyy) 11 12 I swear that the facts contained in this application are true and that I am either the mother, father, grandparent, brother, sister, aunt, uncle, spouse, son, daughter, niece, nephew, grandchild, son-in-law, daughter-in-law, mother-in-law, father-in-law, brother-in-law or sister-in-law of the age of 18 and acknowledge that making a false statement on this application regarding my relationship to the voter violates Georgia law and is punishable by a fine up to $1,000, 12 months in jail, or both."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "I am 65 years of age or older U- UOCAVA.",
+      "I am a uniformed service member, spouse or dependent of a uniformed service member, or other US citizen residing overseas.",
+      "(Complete the information to the right) UOCAVA Voters only My current status is (check one) MOS - Military Overseas MST - Military Stateside OST - Overseas Temporary Resident OSP - Overseas Permanent Resident (may vote for federal offices only) (Optional) By entering my email, I request that my absentee ballot be transmitted to me electronically.",
+      "Email Acceptable forms of identification if you do not have a Georgia Driver's License or State Identification Card Number Identification with your photograph: \u2022 United States Passport \u2022 Georgia voter identification card \u2022 Other valid identification card issued by a branch, department, agency, or entity of the State of Georgia, any other state, or the United States authorized by law to issue personal identification \u2022 United States military identification card \u2022 Employee identification card issued by any branch, department, agency, or entity of the United States government, Georgia state government, or Georgia county, municipality, board, authority, or any other entity of the state of Georgia \u2022 Tribal identification card Documents that show your name and address: \u2022 Current utility bill \u2022 Paycheck \u2022 Government check \u2022 Other government document \u2022 Bank statement How to return your absentee ballot application Absentee ballot applications must be received 11 days before the date of the election."
+    ]
+  },
+  "ID": {},
+  "IN": {
+    "RequiredPhotoID": [
+      "IN Driver's License or IN Identification Card Number Unique Voter ID Number from Voter Registration Last 4 Digits of SSN Option 2: Please enclose a photocopy of your valid Indiana driver's license, Indiana identification card, or other proof of identification that complies with the state's photo ID law (IC 3-5-2-40.5).",
+      "Your application may be delayed if you do not provide a copy of your photo ID with your application."
+    ],
+    "RequiredAgentCertification": [
+      "AFFIDAVIT OF ASSISTANCE TO BE COMPLETED BY INDIVIDUAL ASSISTING ABSENTEE BALLOT APPLICANT ON SECTIONS 2 - 6 Phone Number (night) ( ) Phone Number (day) ( ) Date Assistance Provided Registration Address (number, street, city, state, zip) Mailing Address (number and street, or PO Box number, city, state, zip) I swear or affirm under penalties of perjury that I am not the employer of this voter, an officer of the voter's union, or an agent of the employer or union of this voter and have no knowledge or reason to believe that the individual submitting the application: (1) is ineligible to vote or to cast an absentee ballot; or (2) did not properly complete and sign the application."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "NOTE: Military and overseas voters should use the Federal Post Card Application (FPCA), if eligible I will have official election duties outside of my voting precinct."
+    ]
+  },
+  "IO": {},
+  "KS": {
+    "RequiredPhotoID": [
+      "Current Kansas driver's license number or nondriver's identification card number: ________________________________ If I do not have a current and valid Kansas driver's license number or Kansas nondriver's identification card number, I must provide a copy of one of the following forms of photo identification with this application in order to receive a ballot."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "military ID \u2022 Student ID card issued by an accredited Kansas postsecondary educational institution \u2022 Public assistance ID card issued by a government office in the United States * Employee badge or ID document issued by a government * ID card issued by an Indian tribe office in the United States 3."
+    ]
+  },
+  "LA": {
+    "RequiredPhotoID": [
+      "(You must enclose a copy of student ID or fee bill if you are a student voting for the first time.) CLERGY - I am a minister, priest, rabbi, or other member of the clergy assigned outside my parish of registration, or a spouse/dependent of such."
+    ],
+    "RequiredWitnessSignature": [
+      "Signature X Witnesses: If your signature is a mark, two witnesses to your mark are required to sign.",
+      "Date Witness Signature #1 Witness Signature #2 Whenever a document required by or provided for in the Louisiana Election Code is required to be witnessed, the witness shall be at least 18 years of age (R.S."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "GENERAL ABSENTEE BY MAIL BALLOT APPLICATION (THIS APPLICATION IS NOT FOR MILITARY AND OVERSEAS CITIZENS, SENIOR CITIZENS, DISABLED, OR NURSING HOME VOTERS) INSTRUCTIONS: To submit a paper application, complete and mail to your parish's Registrar of Voters Office.",
+      "Military and overseas citizens, senior citizens, disabled, or nursing home voters do not use this application."
+    ],
+    "HospitalizedVoter": [
+      "(You must enclose a certification by sheriff.) HOSPITALIZED - I expect to be hospitalized on election day, and I did not have knowledge until after the time for early voting had expired; or I was hospitalized during the time for early voting, and I expect to be hospitalized on election day; or I was either hospitalized or restricted to my bed by my physician during early voting and on election day."
+    ]
+  },
+  "MA": {
+    "MilitaryOrOverseasStatus": [
+      "Relationship to voter: Voter is a member of military on active duty or dependent family member of active duty personnel.",
+      "Voter is a Massachusetts citizen residing overseas."
+    ]
+  },
+  "MD": {
+    "RequiredAgentCertification": [
+      "If you want somebody to pick up your ballot for you, you must provide a Designation of Agent form.",
+      "Anyone can help you fill out this form except * A candidate on your ballot * Your employer or an agent of your employer * An officer or agent from your union.",
+      "(choose 1) Text message (cell phone that can receive text messages) Email Voter, sign and date here (Required) X Unit # State Zip Date (mm/dd/yyyy) Assistant, sign here (Required if the voter received help on this form) Under penalty of perjury, I hereby certify that this voter needed help with this form because he or she has a disability or is unable to read or write."
+    ]
+  },
+  "ME": {},
+<  "MI": {
+    "RequiredAgentCertification": [
+      "Deliver it in person to the clerk, the clerk's office, the clerk's authorized assistant or the clerk's drop box.",
+      "An assistant authorized by the clerk who receives absent voter ballot applications at a location other than the clerk's office must have credentials signed by the clerk."
+    ]
+  },
+  "MN": {
+    "MilitaryOrOverseasStatus": [
+      "Important: Active duty military and overseas voters should not use this application.",
+      "Information for active-duty military and overseas voters If you are applying for an absentee ballot because you or your family are active-duty military or because you will be overseas and/or outside of the territorial limits of the United States, do not use this application.",
+      "For more information and to apply online, go to https://mnvotes.gov/uocava."
+    ]
+  },
+  "MO": {
+    "RequiredPhotoID": [
+      "If you registered by mail and this is your first time voting, you must provide a copy of either: (1) a nonexpired Missouri driver's or nondriver's license; (2) a nonexpired military ID, including a veteran's ID card; (3) a nonexpired United States passport; or (4) another photo ID issued by the United States or the state of Missouri which is either not expired or expired after the date of the most recent general (November) election."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "If you registered by mail and this is your first time voting, you must provide a copy of either: (1) a nonexpired Missouri driver's or nondriver's license; (2) a nonexpired military ID, including a veteran's ID card; (3) a nonexpired United States passport; or (4) another photo ID issued by the United States or the state of Missouri which is either not expired or expired after the date of the most recent general (November) election."
+    ]
+  },
+  "MT": {
+    "RequiredAgentCertification": [
+      "Signature of Designee Signature of Elector Date Signed Receipt of absentee ballot by designee: I received the absentee ballot on ."
+    ]
+  },
+  "NC": {
+    "RequiredAgentCertification": [
+      "citizen currently outside of the United States or * A member of one of the following, or a spouse or dependent of a member of one of the following: * The active or reserve components of the Army, Navy, Air Force, Marine Corps, or Coast Guard of the United States who is on active duty * A member of the Merchant Marines, the Commissioned Corps of the Public Health Service, or the Commissioned Corps of the National Oceanic and Atmospheric Administration of the United States * A member of the National Guard or State militia unit who is on activated status 10: Voter's signature This form must be signed by the voter (unless a near relative or legal guardian or assistant is requesting a ballot on the voter's behalf and completes section 7).",
+      "X Assistant's full name Assistant's full address Date (mm/dd/yyyy) If the voter is in a care facility and needs assistance in voting and returning the ballot, enter the facility name below."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "If none of these options are available within seven days of making a request for a MAT, the voter may get assistance from anyone who is not: * An owner, manager, director, or employee of the facility * An elected official, a candidate, or an officeholder in a political party * A campaign manager or treasurer for a candidate or political party 9: Military or overseas Complete this section if you claim North Carolina as your voting residence and are: * A U.S.",
+      "Are you a military member on active duty (including spouse/dependents) or a U.S.",
+      "Facility name Uniformed Services or Merchant Marines on active duty I want my ballot delivered to my: U.S.",
+      "(overseas address required) Overseas full address Email Fax Address indicated in section 5 Overseas address provided in this section Voter, sign and date here (required unless ballot is requested by a near relative, legal guardian, or disability requester) Fraudulently or falsely completing this form is a Class I felony under Chapter 163 of the N.C."
+    ]
+  },
+  "ND": {
+    "RequiredWitnessSignature": [
+      "The disinterested individual shall print the name of the individual marking the \"X\" or using the signature stamp below the \"X\" or signature and shall sign the disinterested individual's own name following the printed name together with the notation, \"witness to the mark.\" Printed name of person making mark or voter's signature stamp Signature of \"witness to the mark\" Voter's Mark *Applicant Without ID: If the applicant does not possess or cannot secure an approved form of identification due to a disability with which the individual lives and which prevents the individual from traveling to obtain, another qualified elector of the state may attest that the applicant is a qualified elector of that precinct by signing below and providing his or her approved North Dakota identification number."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "Application must be for at least one of the following elections: (check all that apply) For Office Use Only Precinct Part ______________ June (Primary) election City or city special election State or county special election November (General) election School or school special election Applicant Information: (ALL FIELDS REQUIRED) Voter's name Date of birth Daytime telephone number North Dakota ID type used: (check one) Driver's license Non-driver's ID Long-term care certificate (include with application) Tribal ID Passport (only for voters living outside the United States) or military ID** Applicant without ID* ID number (required only if driver's license, non-driver's ID, tribal ID, passport, or military ID is selected above) Residential address Ballot delivery address (if different from residential address) City City State ZIP code State ZIP code I do solemnly affirm that I have resided or will reside in the precinct where my residential voting address is located for at least 30 days next preceding the election and will be a qualified elector of the precinct.",
+      "Printed name of attester Signature of attester Driver's / non-driver's / tribal ID number Date Daytime telephone number **Active Military and Overseas Voter: Check ONE (if applicable): Citizen living outside of the United States Uniformed service or family member living away from the voter's residence, yet within the United States Uniformed service or family member living away from the voter's residence, yet outside the United States If one of the check boxes above applies to you, please indicate your preferred ballot delivery method: Mail Email (provide email address): Fax (provide fax number): Mail or submit to the auditor of your county of residence or appropriate election officer (The signature on this affidavit will be compared to the signature on the affidavit on the envelope in which the absentee ballot must be placed.)"
+    ]
+  },
+  "NE": {
+    "RequiredPhotoID": [
+      "The Voter Requests an Early Voting Ballot for the Following Election 2 3 4 5 6 Street Address ______________________________________________________________________________ Apartment or Lot (if any) ____________________________________________________________________ City, State, ZIP _______________________________________________________________________________ Must provide one (1) of the following: Nebraska Driver's License or State ID Number Enclosed photocopy of other acceptable photo identification (see page 2 for more information) Enclosed Reasonable Impediment Certification (see page 2 for more information) Same as above OR Mailing Address __________________________________________________ Apartment or Lot (if any) _________________________________________ City, State, ZIP ____________________________________________________ Check box(es) if private.",
+      "Contact your local election office or the Nebraska Secretary of State by phone at 402-471-2555 or toll free at 888-727- 0007; via our website: sos.nebraska.gov; or email SOS.ELECT@nebraska.gov Voter ID Questions How do I provide photo ID with this form?",
+      "OR You can attach a photocopy of your acceptable form of ID to this form.",
+      "The photocopy must be returned with the form, whether you return the documents in person, by mail, by email or by fax.",
+      "This is only to be used if you have a reasonable impediment preventing you from obtaining acceptable photo ID.",
+      "Passport * Hospital, assisted- living facility, nursing home record, or intermediate care facility record * Military ID * Tribal ID * Nebraska political subdivision (state, county, city, school, etc.) * Nebraska college or university ID Do I need to photocopy both sides of my ID?",
+      "No, you only need to photocopy the side of the ID that has your name and photo.",
+      "You can get a reasonable impediment certification form from your county election official or at: VoterID.Nebraska.gov What happens if I do not provide my driver's license or state ID number or a photocopy of acceptable ID or a reasonable impediment certification?"
+    ],
+    "RequiredAgentCertification": [
+      "Signature of Voter or Agent* Date X _______________________________________________________________________________________________ ________________________________ Printed Name of Agent* (if applicable) Relationship to Voter _________________________________________________________________________________________________ *An agent is a person who requests a ballot for another voter.",
+      "An agent may request ballots for up to two (2) voters per election.",
+      "You can use this form to request a ballot to be mailed to you or delivered by agent.",
+      "You can submit this application through the mail, by email or fax or by agent."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "Passport * Hospital, assisted- living facility, nursing home record, or intermediate care facility record * Military ID * Tribal ID * Nebraska political subdivision (state, county, city, school, etc.) * Nebraska college or university ID Do I need to photocopy both sides of my ID?"
+    ]
+  },
+  "NH": {
+    "RequiredPhotoID": [
+      "Select one: (1)(cid:3)Including(cid:3)a copy of the voter's photo identi\ufb01cation(cid:3)with the(cid:3)absentee ballot application.(cid:3)The identi\ufb01cation shall meet the requirements of RSA 659:13,(cid:3)II(a);(cid:3)OR (2)(cid:3)Personally presenting a qualifying photo(cid:3)identi\ufb01cation,(cid:3)as de\ufb01ned in RSA 659:13,(cid:3)II(a), to(cid:3)the city or town clerk(cid:3)or their designee(cid:3)prior to the issuance of the absentee ballot; OR (3)(cid:3)Including(cid:3)a(cid:3)notarized(cid:3)signature(cid:3)on the absentee ballot application form:(cid:3) State(cid:3)of ______________________________________ (County)(cid:3)of _____________________________________(cid:3) Signed(cid:3)or attested(cid:3)before(cid:3)me(cid:3)on(cid:3)____________________(cid:3)by(cid:3)__________________________________________(cid:3) (Date) (Printed(cid:3)name(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) _______________________________ My(cid:3)Commission(cid:3)expires: _____________(cid:3)Seal:(cid:3) (Signature(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) VIII."
+    ],
+    "RequiredWitnessSignature": [
+      "Any person who witnesses and assists a voter with a disability in executing this form shall print and sign his or her name in the space provided on the application form."
+    ],
+    "RequiredNotary": [
+      "Select one: (1)(cid:3)Including(cid:3)a copy of the voter's photo identi\ufb01cation(cid:3)with the(cid:3)absentee ballot application.(cid:3)The identi\ufb01cation shall meet the requirements of RSA 659:13,(cid:3)II(a);(cid:3)OR (2)(cid:3)Personally presenting a qualifying photo(cid:3)identi\ufb01cation,(cid:3)as de\ufb01ned in RSA 659:13,(cid:3)II(a), to(cid:3)the city or town clerk(cid:3)or their designee(cid:3)prior to the issuance of the absentee ballot; OR (3)(cid:3)Including(cid:3)a(cid:3)notarized(cid:3)signature(cid:3)on the absentee ballot application form:(cid:3) State(cid:3)of ______________________________________ (County)(cid:3)of _____________________________________(cid:3) Signed(cid:3)or attested(cid:3)before(cid:3)me(cid:3)on(cid:3)____________________(cid:3)by(cid:3)__________________________________________(cid:3) (Date) (Printed(cid:3)name(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) _______________________________ My(cid:3)Commission(cid:3)expires: _____________(cid:3)Seal:(cid:3) (Signature(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) VIII."
+    ],
+    "RequiredAgentCertification": [
+      "Select one: (1)(cid:3)Including(cid:3)a copy of the voter's photo identi\ufb01cation(cid:3)with the(cid:3)absentee ballot application.(cid:3)The identi\ufb01cation shall meet the requirements of RSA 659:13,(cid:3)II(a);(cid:3)OR (2)(cid:3)Personally presenting a qualifying photo(cid:3)identi\ufb01cation,(cid:3)as de\ufb01ned in RSA 659:13,(cid:3)II(a), to(cid:3)the city or town clerk(cid:3)or their designee(cid:3)prior to the issuance of the absentee ballot; OR (3)(cid:3)Including(cid:3)a(cid:3)notarized(cid:3)signature(cid:3)on the absentee ballot application form:(cid:3) State(cid:3)of ______________________________________ (County)(cid:3)of _____________________________________(cid:3) Signed(cid:3)or attested(cid:3)before(cid:3)me(cid:3)on(cid:3)____________________(cid:3)by(cid:3)__________________________________________(cid:3) (Date) (Printed(cid:3)name(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) _______________________________ My(cid:3)Commission(cid:3)expires: _____________(cid:3)Seal:(cid:3) (Signature(cid:3)of(cid:3)notarial(cid:3)officer)(cid:3) VIII."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "STATE OF NEW HAMPSHIRE Application for State Election Absentee Ballot-RSA 657:4 Absence, Religious Observance, or Disability (Uniformed and Overseas Citizen Voters Residing Outside the U.S.",
+      "Except for a UOCAVA voter applying for an absentee ballot using the federal official post(cid:3)card(cid:3)forms,(cid:3)any(cid:3)application(cid:3)received(cid:3)or(cid:3)postmarked prior to the 6-month period shall not be accepted by the secretary of state or any town or city clerk."
+    ]
+  },
+  "NJ": {
+    "RequiredPhotoID": [
+      "No Authorized Messenger can (1) be a Candidate in the election for which the voter is requesting a Mail-In Ballot or (2) serve as messenger for more than THREE qualified voters per election, except that an authorized messenger or bearer may serve as such for up to five qualified voters in an election if those voters are immediate family members residing in the same household as the messenger or bearer.I designate ____________________________________________ to be my Authorized Messenger.XAuthorized Messenger must sign application and show photo ID in the presence of the County Clerk or County Clerk designee."
+    ],
+    "RequiredAgentCertification": [
+      "No Authorized Messenger can (1) be a Candidate in the election for which the voter is requesting a Mail-In Ballot or (2) serve as messenger for more than THREE qualified voters per election, except that an authorized messenger or bearer may serve as such for up to five qualified voters in an election if those voters are immediate family members residing in the same household as the messenger or bearer.I designate ____________________________________________ to be my Authorized Messenger.XAuthorized Messenger must sign application and show photo ID in the presence of the County Clerk or County Clerk designee."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "All information required unless marked optional.9Today's Date (MM / DD / YYYY)/ // /(Specify)(MM / DD / YYYY)r Same Address as Section 3Address at which you are registered to vote: Apt.Municipality (City/Town)StateZipStreet Address or RD#3I request Vote-By-Mail Ballots for all elections in which I am eligible to vote and I am (CHECK ONLY ONE)MILITARY/OVERSEAS VOTER ONLYr A Member of the Uniformed Services or Merchant Marine on active duty, or an eligible spouse or dependent.r A U.S.",
+      "You must apply for a Mail-In Ballot for each election, unlessyou designate otherwise under Section 1.Please Seal with Tape and ReturnINSTRUCTIONS\u00b7Fill out application.\u00b7Print and sign your name where indicated.\u00b7Mail or Deliver application to the County Clerk.Hand deliver to: Office of the County Clerk, Election Division, County Administration Building 600 Market Street, Suite 316, Camden NJ 08102DO NOT FAX OR E-MAILUnless you are a Military or Overseas VoterApplication ForVote by Mail BallotApplication ForVote by Mail Ballot"
+    ]
+  },
+  "NM": {},
+  "NY": {
+    "RequiredWitnessSignature": [
+      "___________________________________ __________________________________________ (Signature of witness to mark) _____________________________________ (Address of witness to mark) Board Use Only 2024 Early Vote By Mail Application - English Instructions: Who may apply for an early mail ballot?"
+    ],
+    "RequiredAgentCertification": [
+      "For more information about military/overseas voting, contact your local board of elections or refer to the Military & Overseas Voting section of the State Board of Elections' website at the following addre https://elections.ny.gov/military-and-overseas-federal-voting ss: Where and when to return your application: Applications for an early mail ballot to be picked up by the voter or an agent of the voter must be submitted in-person at the county board of elections not later than the day before the election."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "Information for military and overseas voters: If you are applying for an early mail ballot because you or your family are in the military or because you currently reside overseas, do not use this application.",
+      "For more information about military/overseas voting, contact your local board of elections or refer to the Military & Overseas Voting section of the State Board of Elections' website at the following addre https://elections.ny.gov/military-and-overseas-federal-voting ss: Where and when to return your application: Applications for an early mail ballot to be picked up by the voter or an agent of the voter must be submitted in-person at the county board of elections not later than the day before the election."
+    ]
+  },
+  "OH": {
+    "RequiredPhotoID": [
+      "A COPY of a different form of current photo identification (a driver license, state ID card, or interim ID form issued by the Ohio BMV; a US passport or passport card; or a US military ID card, Ohio National Guard ID card, or US Department of Veterans Affairs ID card).",
+      "The copy of the photo ID must include images of the front and back, except for a passport which must include the passport's identification page."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "A COPY of a different form of current photo identification (a driver license, state ID card, or interim ID form issued by the Ohio BMV; a US passport or passport card; or a US military ID card, Ohio National Guard ID card, or US Department of Veterans Affairs ID card).",
+      "* If you are a member of the uniformed services or a voter outside of the United States, ballots must be received by the fourth day after the election."
+    ]
+  },
+  "OK": {
+    "RequiredAgentCertification": [
+      "If you select an agent to hand deliver this application, they must fill out the section below: Print agent name Agent signature The voter who signed this form chose me to deliver it to the County Election Board.",
+      "I am not the agent for another person for this election.",
+      "If you choose an agent to deliver your application, the agent must print their name and sign the application in the box provided.",
+      "If you choose an agent to deliver your application, the agent must print their name and sign the application in the box provided.",
+      "(EXCEPTION: A voter confined to a nursing home or veterans center, a physically incapacitated voter, or a voter charged with the care of a physically incapacitated person may choose an agent to deliver the application to the Co unty Election Board or send it by mail.) County Election Board Contact Information Scan QR code or follow this link: https://oklahoma.gov/elections/about-us/county-election-boards.html Learn more about Oklahoma's Absentee Ballot Harvesting Laws: oklahoma.gov/elections/voters/absentee-voting/absentee-ballot-harvesting.html 2023 State of Oklahoma Application for Absentee Ballot | Page 2 Confirm Address for Absentee Ballot Instructions 1."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "Uniformed Services members/spouses/dependents and Overseas Citizens can complete an application at oklahoma.gov/elections/ovp.html (scan QR code) or fvap.gov."
+    ]
+  },
+  "PA": {
+    "RequiredPhotoID": [
+      "Necessary identification: In order to apply for a mail-in ballot, you must supply your PA Driver's License or PennDOT issued photo ID card number in the Identification section.",
+      "If you do not have a PA Driver's License or PennDOT issued photo ID card, you must supply the last four (4) digits of your Social Security number.",
+      "If you choose this option, you must enclose a photocopy of an acceptable ID."
+    ],
+    "RequiredWitnessSignature": [
+      "Mark of voter X Address of witness Signature of witness X Date WARNING: If you receive a mail-in ballot and return your voted ballot by the deadline, you may not vote at your polling place on election day."
+    ]
+  },
+  "SD": {
+    "RequiredPhotoID": [
+      "If you would like your ballot sent electronically (for Primary and General Elections ONLY) instead of first class mail, provide your e-mail address: 6 7 E-mail address (MILITARY AND OVERSEAS CITIZENS ONLY): *An overseas military, overseas citizen, or stateside military, a spouse or dependent of the same, voter is not required to submit a photocopy of the voter's ID.",
+      "An acceptable ID is: A South Dakota driver's license or non-driver ID card, a passport or other picture ID issued by the United States government, a tribal photo ID, or a current student photo ID issued by a South Dakota high school or postsecondary education institution.",
+      "Copy of photo identification is attached OR I hereby verify that I am the person named above and these statements made by me on this application are true and correct."
+    ],
+    "RequiredNotary": [
+      "(Seal) Notary Signature _______________________________ My commission expires__________________________ Voter's Signature (required) Voter's Date of Signing (required): ______/_____/_____ Month / Day / Year AUTHORIZED MESSENGER REQUEST DUE TO SICKNESS OR DISABILITY ONLY: The deadline to request is 3:00 p.m."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "YES NO 4 5 MILITARY AND OVERSEAS CITIZENS ONLY: YES NO - I am a member of the Uniformed Services or Merchant Marine on active duty YES NO - I am an eligible spouse or dependent of a member of the Uniformed Services or Merchant Marine on active duty YES NO - I am a U.S.",
+      "citizen residing outside the United States If you checked no for all questions, proceed to section #7.",
+      "If you would like your ballot sent electronically (for Primary and General Elections ONLY) instead of first class mail, provide your e-mail address: 6 7 E-mail address (MILITARY AND OVERSEAS CITIZENS ONLY): *An overseas military, overseas citizen, or stateside military, a spouse or dependent of the same, voter is not required to submit a photocopy of the voter's ID.",
+      "*Any military and overseas voter may submit a signed application for absentee ballot by fax or e-mail."
+    ]
+  },
+  "TX": {
+    "RequiredWitnessSignature": [
+      "Witness and/ or assistant, sign here For definition of witness and assistant, see the application instructions 2 3 4 5 An address from my voter registration certificate My residence address My mailing address OR Another address that fits one of the categories below Number and Street Zip Code ________________________________________________________________________________ Apt/Unit State City Hospital, nursing home, long-term care facility, retirement center, assisted living facility, or a close relative (state your relationship) __________________________ Jail, civil commitment facility, or a close relative (state your relationship)_______________________________________________ Other address outside the county My reason for voting by mail 65 years of age or older Disability - I affirm that, \u201cI have a sickness or physical condition that prevents me from appearing at the polling place on Election Day without a likelihood of needing per- sonal assistance or injuring my health,\u201d as defined in Texas Election Code 82.002(a).",
+      "A witness must complete Section 5 if you are unable to sign and you make a mark instead of a signature, or you are unable to sign or make a mark.",
+      "Witness - Check this box if you witnessed the applicant make a mark or the applicant could not sign in Section 4 and you are signing on his or her behalf.",
+      "/ / Printed name of witness or assistant ______________________________________________________ Residence Address Apt/Unit Zip Code State City ______________________________________________________ Failure to complete this section is a Class A Misdemeanor if applicant's signature or mark was witnessed or applicant was assisted in completing this application.",
+      "Signature of witness or assistant X S e c ti o n 4 - A p p l i c a n t , s i g n h e r e a n d d a t e d i n i n k ."
+    ],
+    "RequiredAgentCertification": [
+      "Witness and/ or assistant, sign here For definition of witness and assistant, see the application instructions 2 3 4 5 An address from my voter registration certificate My residence address My mailing address OR Another address that fits one of the categories below Number and Street Zip Code ________________________________________________________________________________ Apt/Unit State City Hospital, nursing home, long-term care facility, retirement center, assisted living facility, or a close relative (state your relationship) __________________________ Jail, civil commitment facility, or a close relative (state your relationship)_______________________________________________ Other address outside the county My reason for voting by mail 65 years of age or older Disability - I affirm that, \u201cI have a sickness or physical condition that prevents me from appearing at the polling place on Election Day without a likelihood of needing per- sonal assistance or injuring my health,\u201d as defined in Texas Election Code 82.002(a).",
+      "________________________________________________ Assistant - Check this box and complete this section if you assisted the applicant in filling out this application in his or her presence or submitted on his or her behalf (by mail, email, or fax).",
+      "/ / Printed name of witness or assistant ______________________________________________________ Residence Address Apt/Unit Zip Code State City ______________________________________________________ Failure to complete this section is a Class A Misdemeanor if applicant's signature or mark was witnessed or applicant was assisted in completing this application.",
+      "Signature of witness or assistant X S e c ti o n 4 - A p p l i c a n t , s i g n h e r e a n d d a t e d i n i n k ."
+    ]
+  },
+  "VT": {
+    "MilitaryOrOverseasStatus": [
+      "Military, overseas civilian, ill or with disability voters If applicable 1 2 3 4 5 Last name Middle name Address (not P.O.",
+      "Box City or Town I want to vote by mail in the following elections: Annual Town Meeting All local elections General Election Primary Election Presidential Primary Election (Choose a party) Democratic Republican State VT Zip State Zip I want to vote by mail during the following period (within 1 calendar year): Or Start sending me ballots on (mm/dd/yyyy) Stop sending me ballots on (mm/dd/yyyy) My voter type (check 1): Military (active in U.S.",
+      "or overseas) Overseas voter Ill or with disability I want my ballot delivered by (check 1): Email (ballots cannot be returned electronically) Fax Mail Two Justices of the Peace (only if you are ill or with a disability)."
+    ]
+  },
+  "WI": {
+    "RequiredPhotoID": [
+      "You can confirm your voter registration at https://myvote.wi.gov PHOTO ID REQUIRED, unless you qualify for an exception.",
+      "Photo ID requirement: If you will receive your absentee ballot by mail, and have not previously provided a copy of acceptable photo ID with a prior by-mail absentee ballot request, a copy of photo ID must accompany this application.",
+      "You may submit your application and a copy of your ID by mail, fax or email.",
+      "In-person voters must always show acceptable photo ID.",
+      "The following documents are acceptable Photo ID (For specific information regarding expired documents visit http://bringit.wi.gov.) State of WI driver license or ID card Military ID card issued by a U.S.",
+      "uniformed service Photo ID issued by the federal Dept.",
+      "passport booklet or card Certificate of Naturalization WI DOT DL or ID card receipt Citation/Notice to revoke or suspend WI DL ID card issued by federally recognized WI tribe In lieu of photo ID, the voters listed below may satisfy the voter ID requirement by the following means: * Electors who are indefinitely confined (see Section 6) - the signature of a witness on the Absentee Certificate Envelope.",
+      "* Military, Permanent Overseas and Confidential Electors - Exempt from the photo ID requirement."
+    ],
+    "RequiredWitnessSignature": [
+      "passport booklet or card Certificate of Naturalization WI DOT DL or ID card receipt Citation/Notice to revoke or suspend WI DL ID card issued by federally recognized WI tribe In lieu of photo ID, the voters listed below may satisfy the voter ID requirement by the following means: * Electors who are indefinitely confined (see Section 6) - the signature of a witness on the Absentee Certificate Envelope."
+    ],
+    "RequiredAgentCertification": [
+      "TEMPORARILY HOSPITALIZED VOTERS ONLY (please fill in circle) I certify that I cannot appear at the polling place on election day because I am hospitalized, and appoint the following person to serve as my agent, pursuant to Wis.",
+      "Agent Last Name Agent First Name Agent Middle Name 7 AGENT: I certify that I am the duly appointed agent of the hospitalized absentee elector, that the absentee ballot to be received by me is received solely for the benefit of the above named hospitalized elector, and that such ballot will be promptly transmitted by me to that elector and then returned to the municipal clerk or the proper polling place.",
+      "Agent Signature X Agent Address ASSISTANT DECLARATION / CERTIFICATION (if required) I certify that the application is made on request and by authorization of the named elector, who is unable to sign the application due to physical disability.",
+      "Agent Signature X Today's Date VOTER DECLARATION / CERTIFICATION (required for all voters) I certify that I am a qualified elector, a U.S.",
+      "* Electors residing in care facilities not served by Special Voting Deputies - the signature of an authorized representative of the facility.",
+      "* This section is only to be completed by an elector or the agent of an elector who is currently hospitalized.",
+      "* An agent completing this form for a hospitalized elector must provide his/her name, signature and address on this application.",
+      "Assistant Signature: Voter Signature: In the situation where the elector is unable to sign the Voter Declaration / Certification due to a physical disability, the elector may authorize another elector to sign on his or her behalf."
+    ],
+    "MilitaryOrOverseasStatus": [
+      "Number City State & ZIP 4 Fill in the appropriate circle - if applicable (see instructions for definitions): Military Permanent Overseas Temporary Overseas \u25cb \u25cb \u25cb (Ballot will be mailed to the address above if no preference is indicated.",
+      "Number City Care Facility Name (if applicable) C / O (if applicable) State & ZIP FAX Fax Number EMAIL Email Address For Military and Overseas Voters Only For Military and Overseas Voters Only Voter must have a computer and printer when receiving a ballot by fax or email.",
+      "* This form should only be completed by registered voters; if you are not a registered voter or military elector, please submit a Voter Registration Application (EL-131) with this form.",
+      "The following documents are acceptable Photo ID (For specific information regarding expired documents visit http://bringit.wi.gov.) State of WI driver license or ID card Military ID card issued by a U.S.",
+      "* Military, Permanent Overseas and Confidential Electors - Exempt from the photo ID requirement.",
+      "* A \u201cMilitary elector\u201d is a person, or the spouse or dependent of a person who is a member of a uniformed service or the merchant marines, a civilian employee of the United States, a civilian officially attached to a uniformed service and serving outside the United States, or a Peace Corp volunteer.",
+      "Military electors do not need to register to vote.",
+      "* A \u201cPermanent Overseas elector\u201d is a person who is a United States citizen, 18 years old or older, who resided in Wisconsin immediately prior to leaving the United States, who is now living outside the United States and has no present intent to return, who is not registered in any other location, or who is an adult child of a United States citizen who resided in this state prior to establishing residency abroad.",
+      "Permanent Overseas electors will receive ballots for federal offices only and must be registered to vote prior to receiving a ballot.",
+      "* A \u201cTemporary Overseas elector\u201d is a person who is a United States citizen, 18 years of age or older, a resident of Wisconsin and is overseas for a temporary purpose and intends to return to their Wisconsin residence.",
+      "* Military and Permanent Overseas voters may request and access their ballot directly at https://myvote.wi.gov."
+    ],
+    "HospitalizedVoter": [
+      "TEMPORARILY HOSPITALIZED VOTERS ONLY (please fill in circle) I certify that I cannot appear at the polling place on election day because I am hospitalized, and appoint the following person to serve as my agent, pursuant to Wis.",
+      "Agent Last Name Agent First Name Agent Middle Name 7 AGENT: I certify that I am the duly appointed agent of the hospitalized absentee elector, that the absentee ballot to be received by me is received solely for the benefit of the above named hospitalized elector, and that such ballot will be promptly transmitted by me to that elector and then returned to the municipal clerk or the proper polling place.",
+      "* This section is only to be completed by an elector or the agent of an elector who is currently hospitalized.",
+      "* An agent completing this form for a hospitalized elector must provide his/her name, signature and address on this application."
+    ],
+    "IndefinitelyConfinedClause": [
+      "For indefinitely-confined voters only: I certify that I am indefinitely confined because of age, illness, infirmity or disability and request absentee ballots be sent to me automatically until I am no longer confined, or I fail to return a ballot.",
+      "passport booklet or card Certificate of Naturalization WI DOT DL or ID card receipt Citation/Notice to revoke or suspend WI DL ID card issued by federally recognized WI tribe In lieu of photo ID, the voters listed below may satisfy the voter ID requirement by the following means: * Electors who are indefinitely confined (see Section 6) - the signature of a witness on the Absentee Certificate Envelope.",
+      "If the elector is also indefinitely confined, the elector does not need a representative of the facility to sign.",
+      "* Select the third option only if you are indefinitely confined due to age, illness, infirmity or disability and wish to request absentee ballots for all elections until you are no longer confined or fail to return a ballot for an election."
+    ]
+  },
+  "WY": {
+    "MilitaryOrOverseasStatus": [
+      "LAST NAME: FIRST NAME: MIDDLE: COUNTY RESIDENTIAL ADDRESS: CITY: STATE: ZIP: DATE OF BIRTH: CONTACT PHONE NUMBER: ACTIVE MILITARY?"
+    ]
+  }
+}

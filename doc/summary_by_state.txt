@@ -1,0 +1,30 @@
+AK: MilitaryOrOverseas, RequiredPhotoID
+AL: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID, RequiredWitnessSignature
+AR: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID
+CT: MilitaryOrOverseas
+DE: MilitaryOrOverseas
+FL: AllowsAgentOrAssistant, MilitaryOrOverseas
+GA: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID
+IN: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID
+KS: MilitaryOrOverseas, RequiredPhotoID
+LA: HospitalizedVoter, MilitaryOrOverseas, RequiredWitnessSignature
+MA: MilitaryOrOverseas
+MD: AllowsAgentOrAssistant
+MI: AllowsAgentOrAssistant
+MN: MilitaryOrOverseas
+MO: MilitaryOrOverseas, RequiredPhotoID
+MT: AllowsAgentOrAssistant
+NC: AllowsAgentOrAssistant, MilitaryOrOverseas
+ND: MilitaryOrOverseas
+NE: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID
+NH: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredNotary, RequiredPhotoID
+NJ: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredPhotoID
+NY: AllowsAgentOrAssistant, MilitaryOrOverseas, RequiredWitnessSignature
+OH: MilitaryOrOverseas, RequiredPhotoID
+OK: AllowsAgentOrAssistant, MilitaryOrOverseas
+PA: RequiredPhotoID, RequiredWitnessSignature
+SD: MilitaryOrOverseas, RequiredNotary, RequiredPhotoID
+TX: AllowsAgentOrAssistant, RequiredWitnessSignature
+VT: MilitaryOrOverseas
+WI: AllowsAgentOrAssistant, HospitalizedVoter, IndefinitelyConfinedClause, MilitaryOrOverseas, RequiredPhotoID
+WY: MilitaryOrOverseas
