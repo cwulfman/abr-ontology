@@ -1,0 +1,32 @@
+{
+  "state_code": "ME",
+  "state_name": "Maine",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "Full Name of Registered Voter", "ontology_class": "PersonName", "section": "1", "notes": "Full name - Required"},
+    {"field_name": "Residence Address (Street Address)", "ontology_class": "ResidentialAddress", "section": "2", "notes": "Street address where registered"},
+    {"field_name": "Municipality", "ontology_class": "ResidentialAddress", "section": "2", "notes": "City/town"},
+    {"field_name": "Voter's Date of Birth", "ontology_class": "DateOfBirth", "section": "3", "notes": "mm-dd-yyyy format"},
+    {"field_name": "Daytime Phone Number", "ontology_class": "PhoneNumber", "section": "4", "notes": "Contact phone; clerk will use only to notify voter if problem with application or ballot"},
+    {"field_name": "Email Address", "ontology_class": "EmailAddress", "section": "4", "notes": "Contact email; clerk will use only to notify voter if problem"},
+    {"field_name": "Issued to Voter", "ontology_class": "BallotDeliveryMethod", "section": "5", "notes": "Application required if voter will vote outside Municipal Clerk's presence"},
+    {"field_name": "By Mail to this Address", "ontology_class": "BallotMailingAddress", "section": "5", "notes": "Mailing address for ballot"},
+    {"field_name": "By Immediate Family Member of Voter", "ontology_class": "BallotDeliveryAgent", "section": "5c", "notes": "Delivered to immediate family member"},
+    {"field_name": "Family Member Name", "ontology_class": "AgentName", "section": "5c", "notes": "Name of family member"},
+    {"field_name": "Relationship to Voter", "ontology_class": "AgentRelationship", "section": "5c", "notes": "Family relationship"},
+    {"field_name": "By 3rd Person", "ontology_class": "BallotDeliveryAgent", "section": "5d", "notes": "Designated by voter"},
+    {"field_name": "3rd Person Name", "ontology_class": "AgentName", "section": "5d", "notes": "Name of designated person"},
+    {"field_name": "3rd Person Telephone #", "ontology_class": "AgentContactInformation", "section": "5d", "notes": "Phone number of designated person"},
+    {"field_name": "Signature of Voter OR Immediate Family Member", "ontology_class": "VoterSignature", "section": "6", "notes": "Required"},
+    {"field_name": "Date", "ontology_class": "SignatureDate", "section": "6", "notes": "Date application signed"},
+    {"field_name": "Signature of Immediate Family Member Returning Ballot", "ontology_class": "BallotDeliveryAgent", "section": "7", "notes": "If ballot delivered to voter or different family member"},
+    {"field_name": "Relationship to Voter (returning ballot)", "ontology_class": "AgentRelationship", "section": "7", "notes": "Relationship of person returning ballot"},
+    {"field_name": "Aide helped read the application", "ontology_class": "AssistantInformation", "section": "AIDE CERTIFICATE", "notes": "Checkbox if aide helped read"},
+    {"field_name": "Aide helped sign the application", "ontology_class": "AssistantInformation", "section": "AIDE CERTIFICATE", "notes": "Checkbox if aide helped sign"},
+    {"field_name": "Aide helped read and sign the application", "ontology_class": "AssistantInformation", "section": "AIDE CERTIFICATE", "notes": "Checkbox if aide helped both read and sign"},
+    {"field_name": "Signature of Aide", "ontology_class": "AssistantInformation", "section": "AIDE CERTIFICATE", "notes": "Aide signature"},
+    {"field_name": "Printed Name of Aide", "ontology_class": "AssistantInformation", "section": "AIDE CERTIFICATE", "notes": "Aide name"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Maine absentee ballot application for November 4, 2025 Referendum Election. Must be received by Municipal Clerk by close of business on Thursday, October 30, 2025, unless special circumstances exist. Voted ballots must be received by 8 p.m. on election day. Ballot can be delivered to voter, immediate family member, or designated 3rd person. Aide certificate required if applicant received assistance."
+}

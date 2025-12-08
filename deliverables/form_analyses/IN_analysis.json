@@ -1,0 +1,279 @@
+{
+  "state_code": "IN",
+  "state_name": "Indiana",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Name",
+      "ontology_class": "PersonName",
+      "section": "1 - Voter Registration Information",
+      "notes": "Please print"
+    },
+    {
+      "field_name": "Former Name",
+      "ontology_class": "FormerName",
+      "section": "1 - Voter Registration Information",
+      "notes": "If name changed"
+    },
+    {
+      "field_name": "Registration Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "Number and street; no PO Boxes"
+    },
+    {
+      "field_name": "City/Town",
+      "ontology_class": "ResidentialAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "Part of registration address"
+    },
+    {
+      "field_name": "State",
+      "ontology_class": "ResidentialAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "Part of registration address"
+    },
+    {
+      "field_name": "Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "Part of registration address"
+    },
+    {
+      "field_name": "Date of Birth",
+      "ontology_class": "DateOfBirth",
+      "section": "1 - Voter Registration Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Indiana County of Residence",
+      "ontology_class": "ResidentialAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "County"
+    },
+    {
+      "field_name": "Phone Number",
+      "ontology_class": "PhoneNumber",
+      "section": "1 - Voter Registration Information",
+      "notes": "Optional if not filing online"
+    },
+    {
+      "field_name": "E-mail Address",
+      "ontology_class": "EmailAddress",
+      "section": "1 - Voter Registration Information",
+      "notes": "Optional if not filing online"
+    },
+    {
+      "field_name": "Mailing Address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "2 - Absentee Ballot Mailing Address",
+      "notes": "If different from registration address; number and street or P.O. Box"
+    },
+    {
+      "field_name": "Mailing City/Town",
+      "ontology_class": "BallotMailingAddress",
+      "section": "2 - Absentee Ballot Mailing Address",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing State",
+      "ontology_class": "BallotMailingAddress",
+      "section": "2 - Absentee Ballot Mailing Address",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing Zip Code",
+      "ontology_class": "BallotMailingAddress",
+      "section": "2 - Absentee Ballot Mailing Address",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing Country",
+      "ontology_class": "BallotMailingAddress",
+      "section": "2 - Absentee Ballot Mailing Address",
+      "notes": "If outside USA"
+    },
+    {
+      "field_name": "IN Driver's License or IN Identification Card Number",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "3 - Voter Identification Option 1",
+      "notes": "Required to complete Option 1 or Option 2"
+    },
+    {
+      "field_name": "Unique Voter ID Number from Voter Registration",
+      "ontology_class": "VoterPIN",
+      "section": "3 - Voter Identification Option 1",
+      "notes": "Alternative ID option"
+    },
+    {
+      "field_name": "Last 4 Digits of SSN",
+      "ontology_class": "Last4SSN",
+      "section": "3 - Voter Identification Option 1",
+      "notes": "Alternative ID option"
+    },
+    {
+      "field_name": "Photocopy of valid IN driver's license or ID",
+      "ontology_class": "CopyOfPhotoID",
+      "section": "3 - Voter Identification Option 2",
+      "notes": "Must comply with state's photo ID law"
+    },
+    {
+      "field_name": "DEMOCRATIC PARTY ballot",
+      "ontology_class": "PartyAffiliation",
+      "section": "4 - May Primary Election Only",
+      "notes": "Party ballot request"
+    },
+    {
+      "field_name": "REPUBLICAN PARTY ballot",
+      "ontology_class": "PartyAffiliation",
+      "section": "4 - May Primary Election Only",
+      "notes": "Party ballot request"
+    },
+    {
+      "field_name": "PUBLIC QUESTION ONLY",
+      "ontology_class": "PartyAffiliation",
+      "section": "4 - May Primary Election Only",
+      "notes": "Do not wish to vote in party's primary"
+    },
+    {
+      "field_name": "Expect to be absent from county on election day",
+      "ontology_class": "OutOfCountyTravelReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Entire 12 hours polls are open"
+    },
+    {
+      "field_name": "Will be confined due to illness or injury",
+      "ontology_class": "IllnessOrDisabilityReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Residence, health care facility, or hospital"
+    },
+    {
+      "field_name": "Caring for individual confined due to illness or injury",
+      "ontology_class": "CaregiverForDisabledPersonReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Private residence"
+    },
+    {
+      "field_name": "Scheduled to work at regular place of employment",
+      "ontology_class": "WorkConflictReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Entire 12 hours polls are open"
+    },
+    {
+      "field_name": "Voter at least sixty-five (65) years of age",
+      "ontology_class": "AgeRequirement",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Age 65+"
+    },
+    {
+      "field_name": "Voter with disabilities",
+      "ontology_class": "DisabilityStatus",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Must contact county election board if unable to mark ballot or sign envelope"
+    },
+    {
+      "field_name": "Eligible to vote under fail safe procedures",
+      "ontology_class": "RegistrationLocation",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "IC 3-10-11 or IC 3-10-12"
+    },
+    {
+      "field_name": "Member of Indiana National Guard deployed or public safety officer",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "National Guard or public safety officer"
+    },
+    {
+      "field_name": "Have official election duties outside voting precinct",
+      "ontology_class": "ElectionOfficialDutiesReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Election official"
+    },
+    {
+      "field_name": "Serious sex offender",
+      "ontology_class": "IncarcerationReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "As defined in IC 35-42-4-14(a)"
+    },
+    {
+      "field_name": "Prevented from voting due to unavailability of transportation",
+      "ontology_class": "DisabilityStatus",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Transportation unavailability"
+    },
+    {
+      "field_name": "Unable to vote due to observance of religious discipline or holiday",
+      "ontology_class": "ReligiousConflictReason",
+      "section": "5 - Reason to Vote Absentee",
+      "notes": "Entire 12 hours polls are open"
+    },
+    {
+      "field_name": "Signature of Voter",
+      "ontology_class": "VoterSignature",
+      "section": "6 - Voter's Affirmation & Signature",
+      "notes": "Required; or person designated to sign for voter with disabilities"
+    },
+    {
+      "field_name": "Date signed",
+      "ontology_class": "SignatureDate",
+      "section": "6 - Voter's Affirmation & Signature",
+      "notes": "Date of signature"
+    },
+    {
+      "field_name": "Date Received",
+      "ontology_class": "SignatureDate",
+      "section": "6 - Voter's Affirmation & Signature",
+      "notes": "For person who receives completed application from voter"
+    },
+    {
+      "field_name": "Name of person providing assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "If voter needs help completing sections 2-6"
+    },
+    {
+      "field_name": "Date Assistance Provided",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Date"
+    },
+    {
+      "field_name": "Phone Number (day) of assistant",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Daytime phone"
+    },
+    {
+      "field_name": "Phone Number (night) of assistant",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Evening phone"
+    },
+    {
+      "field_name": "Registration Address of assistant",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Assistant's registration address"
+    },
+    {
+      "field_name": "Mailing Address of assistant",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Assistant's mailing address"
+    },
+    {
+      "field_name": "Signature of Person Assisting Voter",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Assistant's signature"
+    },
+    {
+      "field_name": "Date signed by assistant",
+      "ontology_class": "AssistantInformation",
+      "section": "7 - Affidavit of Assistance",
+      "notes": "Date assistant signed"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Indiana form can be mailed, e-mailed, faxed, or hand-delivered. Must be received by 11:59 p.m. (local time) 11-12 days before election. Military and overseas voters should use Federal Post Card Application (FPCA). Application may be delayed if county election board cannot match ID information. Perjury punishable by up to 2.5 years imprisonment and/or $10,000 fine."
+}

@@ -1,0 +1,147 @@
+{
+  "state_code": "ID",
+  "state_name": "Idaho",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "First Name",
+      "ontology_class": "FirstName",
+      "section": "Voter Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Middle Initial",
+      "ontology_class": "MiddleName",
+      "section": "Voter Information",
+      "notes": "MI"
+    },
+    {
+      "field_name": "Last Name",
+      "ontology_class": "LastName",
+      "section": "Voter Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Suffix",
+      "ontology_class": "NameSuffix",
+      "section": "Voter Information",
+      "notes": "Jr., Sr., etc."
+    },
+    {
+      "field_name": "Birth Year",
+      "ontology_class": "DateOfBirth",
+      "section": "Voter Information",
+      "notes": "Year only"
+    },
+    {
+      "field_name": "Residence Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Street address"
+    },
+    {
+      "field_name": "Apt./Unit #",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Apartment or unit number"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Part of residence address"
+    },
+    {
+      "field_name": "State",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Part of residence address"
+    },
+    {
+      "field_name": "Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Part of residence address"
+    },
+    {
+      "field_name": "County",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "County of residence"
+    },
+    {
+      "field_name": "Mailing Address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "If different than residence; ballot will be sent to this address"
+    },
+    {
+      "field_name": "Mailing City",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing State",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing Zip Code",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Country (if outside USA)",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "For international mailing addresses"
+    },
+    {
+      "field_name": "Phone Number",
+      "ontology_class": "PhoneNumber",
+      "section": "Contact Information",
+      "notes": "Optional - will become public record"
+    },
+    {
+      "field_name": "Email Address",
+      "ontology_class": "EmailAddress",
+      "section": "Contact Information",
+      "notes": "Optional - will become public record"
+    },
+    {
+      "field_name": "All Elections in 2025",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Absentee Ballot Selection",
+      "notes": "Including any special or emergency election"
+    },
+    {
+      "field_name": "May 20, 2025",
+      "ontology_class": "ElectionDate",
+      "section": "Absentee Ballot Selection",
+      "notes": "Specific election date with request deadline"
+    },
+    {
+      "field_name": "November 4, 2025",
+      "ontology_class": "ElectionDate",
+      "section": "Absentee Ballot Selection",
+      "notes": "Specific election date with request deadline"
+    },
+    {
+      "field_name": "Signature of Voter",
+      "ontology_class": "VoterSignature",
+      "section": "Signature",
+      "notes": "Required under penalty of perjury"
+    },
+    {
+      "field_name": "Date",
+      "ontology_class": "SignatureDate",
+      "section": "Signature",
+      "notes": "Date form was completed"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Idaho form is very simple and streamlined. Must be received by County Clerk before 5:00 pm on deadline date (15 days before election for November election, 11 days before for May election). Can also request online at voteidaho.gov. Warning: false information punishable by imprisonment and fine up to $50,000. Contact information optional but becomes public record."
+}

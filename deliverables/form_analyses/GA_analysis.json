@@ -1,0 +1,243 @@
+{
+  "state_code": "GA",
+  "state_name": "Georgia",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Date of Primary, Election, or Runoff",
+      "ontology_class": "ElectionDate",
+      "section": "1 - Date of Election",
+      "notes": "MM/DD/YYYY format; must be received 11 days before election"
+    },
+    {
+      "field_name": "First Name",
+      "ontology_class": "FirstName",
+      "section": "2 - Print voter name",
+      "notes": "As appears on voter registration"
+    },
+    {
+      "field_name": "Middle Name",
+      "ontology_class": "MiddleName",
+      "section": "2 - Print voter name",
+      "notes": "As appears on voter registration"
+    },
+    {
+      "field_name": "Last Name",
+      "ontology_class": "LastName",
+      "section": "2 - Print voter name",
+      "notes": "As appears on voter registration"
+    },
+    {
+      "field_name": "Suffix",
+      "ontology_class": "NameSuffix",
+      "section": "2 - Print voter name",
+      "notes": "As appears on voter registration"
+    },
+    {
+      "field_name": "Democratic ballot type",
+      "ontology_class": "PartyAffiliation",
+      "section": "3 - Type of ballot",
+      "notes": "Required in primary"
+    },
+    {
+      "field_name": "Republican ballot type",
+      "ontology_class": "PartyAffiliation",
+      "section": "3 - Type of ballot",
+      "notes": "Required in primary"
+    },
+    {
+      "field_name": "Non Partisan ballot type",
+      "ontology_class": "PartyAffiliation",
+      "section": "3 - Type of ballot",
+      "notes": "Will not have ANY party candidates listed"
+    },
+    {
+      "field_name": "Residential Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "4 - Residential address",
+      "notes": "Must be on voter registration; no P.O. Box"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "4 - Residential address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "County",
+      "ontology_class": "ResidentialAddress",
+      "section": "4 - Residential address",
+      "notes": "Part of residential address in GA"
+    },
+    {
+      "field_name": "Zip",
+      "ontology_class": "ResidentialAddress",
+      "section": "4 - Residential address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Temporary ballot mailing address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "5 - Temporary ballot mailing address",
+      "notes": "Must be in different county unless physically disabled or detained; full address with city, state, zip"
+    },
+    {
+      "field_name": "Phone number",
+      "ontology_class": "PhoneNumber",
+      "section": "6 - Contact information",
+      "notes": "Recommended"
+    },
+    {
+      "field_name": "Email address",
+      "ontology_class": "EmailAddress",
+      "section": "6 - Contact information",
+      "notes": "Recommended"
+    },
+    {
+      "field_name": "Date of birth",
+      "ontology_class": "DateOfBirth",
+      "section": "7 - Voter identification",
+      "notes": "MM/DD/YYYY - Required; must provide AND DL/ID or copy of acceptable ID"
+    },
+    {
+      "field_name": "Georgia Driver's License Number",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "7 - Voter identification",
+      "notes": "Required if have one"
+    },
+    {
+      "field_name": "State Identification Card Number",
+      "ontology_class": "StateIDNumber",
+      "section": "7 - Voter identification",
+      "notes": "Required if have one and no DL"
+    },
+    {
+      "field_name": "I do not have a Georgia Driver's License or Identification Card",
+      "ontology_class": "StatementNoIDAvailable",
+      "section": "7 - Voter identification",
+      "notes": "If checked, must provide copy of acceptable identification"
+    },
+    {
+      "field_name": "Place identification here",
+      "ontology_class": "CopyOfPhotoID",
+      "section": "7 - Voter identification",
+      "notes": "Space to attach copy of acceptable ID if no GA DL or ID number"
+    },
+    {
+      "field_name": "Voter Signature",
+      "ontology_class": "VoterSignature",
+      "section": "8 - Voter oath and signature",
+      "notes": "Required; use pen, no electronic signatures; swears eligibility under penalty"
+    },
+    {
+      "field_name": "Date of signature",
+      "ontology_class": "SignatureDate",
+      "section": "8 - Voter oath and signature",
+      "notes": "MM/DD/YYYY"
+    },
+    {
+      "field_name": "Voter name (Page 2 Section 9)",
+      "ontology_class": "PersonName",
+      "section": "9 - Print voter name (if requesting for someone)",
+      "notes": "First, Middle, Last, Suffix - if someone else requesting on behalf"
+    },
+    {
+      "field_name": "Assistant's name",
+      "ontology_class": "AssistantInformation",
+      "section": "10 - Assisting a voter",
+      "notes": "If voter is illiterate or physically disabled"
+    },
+    {
+      "field_name": "Assistant's signature",
+      "ontology_class": "AssistantInformation",
+      "section": "10 - Assisting a voter",
+      "notes": "Required if assisting"
+    },
+    {
+      "field_name": "Date of assistant signature",
+      "ontology_class": "AssistantInformation",
+      "section": "10 - Assisting a voter",
+      "notes": "MM/DD/YYYY"
+    },
+    {
+      "field_name": "I swear voter is physically disabled",
+      "ontology_class": "DisabilityStatus",
+      "section": "11 - Requesting ballot on behalf",
+      "notes": "Checkbox option for eligibility"
+    },
+    {
+      "field_name": "I swear voter is temporarily residing out of county",
+      "ontology_class": "ResidencyRequirement",
+      "section": "11 - Requesting ballot on behalf",
+      "notes": "Checkbox option for eligibility"
+    },
+    {
+      "field_name": "Signature of authorized and eligible requestor",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "11 - Requesting ballot on behalf",
+      "notes": "Must be eligible relative; swears relationship under penalty"
+    },
+    {
+      "field_name": "Relationship to voter",
+      "ontology_class": "AgentRelationship",
+      "section": "11 - Requesting ballot on behalf",
+      "notes": "Must specify relationship (mother, father, grandparent, etc.)"
+    },
+    {
+      "field_name": "I opt-in to receive absentee ballot for rest of election cycle",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "12 - Ballot request opt-in",
+      "notes": "Optional; must be eligible"
+    },
+    {
+      "field_name": "D - Disabled: I am physically disabled",
+      "ontology_class": "DisabilityStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "Eligibility reason for opt-in"
+    },
+    {
+      "field_name": "E - Elderly: I am 65 years of age or older",
+      "ontology_class": "AgeRequirement",
+      "section": "12 - Ballot request opt-in",
+      "notes": "Eligibility reason for opt-in"
+    },
+    {
+      "field_name": "U - UOCAVA: uniformed service member or overseas citizen",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "Eligibility reason for opt-in"
+    },
+    {
+      "field_name": "UOCAVA Status: MOS - Military Overseas",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "UOCAVA voter status option"
+    },
+    {
+      "field_name": "UOCAVA Status: MST - Military Stateside",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "UOCAVA voter status option"
+    },
+    {
+      "field_name": "UOCAVA Status: OST - Overseas Temporary Resident",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "UOCAVA voter status option"
+    },
+    {
+      "field_name": "UOCAVA Status: OSP - Overseas Permanent Resident",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "12 - Ballot request opt-in",
+      "notes": "May vote for federal offices only"
+    },
+    {
+      "field_name": "Email for UOCAVA ballot electronic transmission",
+      "ontology_class": "BallotEmailAddress",
+      "section": "12 - Ballot request opt-in",
+      "notes": "Optional for UOCAVA voters to request electronic ballot"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Georgia form requires date of birth AND either GA DL/ID number OR copy of acceptable identification. Form includes extensive list of acceptable IDs (passport, voter ID card, military ID, employee ID, tribal ID, utility bill, paycheck, government check, bank statement). Application must be received 11 days before election. Can be returned by mail, email (as attachment), fax, or in-person. Specific restrictions on who can request ballot on behalf of voter and who can handle completed applications."
+}

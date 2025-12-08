@@ -1,0 +1,26 @@
+{
+  "state_code": "MO",
+  "state_name": "Missouri",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "Printed Name", "ontology_class": "PersonName", "section": "Top", "notes": "Full name - Required"},
+    {"field_name": "Election Date", "ontology_class": "ElectionDate", "section": "Top", "notes": "Date of election"},
+    {"field_name": "Last Four Digits of Social Security Number", "ontology_class": "Last4SSN", "section": "Identification", "notes": "For identification purposes"},
+    {"field_name": "Political Party Ballot", "ontology_class": "PartyAffiliation", "section": "Primary Election", "notes": "Name of political party ballot for primary"},
+    {"field_name": "Absence on Election Day", "ontology_class": "OutOfCountyTravelReason", "section": "Reason", "notes": "Absence from jurisdiction on election day"},
+    {"field_name": "Incapacity or Confinement Due to Illness or Physical Disability", "ontology_class": "IllnessOrDisabilityReason", "section": "Reason", "notes": "Illness/disability including caring for person with illness/disability at same address"},
+    {"field_name": "Religious Belief or Practice", "ontology_class": "ReligiousConflictReason", "section": "Reason", "notes": "Religious belief or practice"},
+    {"field_name": "Employment as Election Authority/First Responder/Health Care/Law Enforcement", "ontology_class": "WorkConflictReason", "section": "Reason", "notes": "Employment as election authority or by election authority at location other than polling place; first responder; health care worker; law enforcement"},
+    {"field_name": "Incarceration", "ontology_class": "IncarcerationReason", "section": "Reason", "notes": "Incarceration with retained voting qualifications"},
+    {"field_name": "Address Confidentiality Program", "ontology_class": "AddressConfidentialityProgramParticipation", "section": "Reason", "notes": "Certified participation in address confidentiality program due to safety concerns"},
+    {"field_name": "Registration Address - Street", "ontology_class": "ResidentialAddress", "section": "Address", "notes": "Street address where registered"},
+    {"field_name": "Registration Address - City, State, Zip", "ontology_class": "ResidentialAddress", "section": "Address", "notes": "City, State, Zip Code"},
+    {"field_name": "Mailing Address - Street or PO Box", "ontology_class": "BallotMailingAddress", "section": "Mailing Address", "notes": "Where ballot should be mailed"},
+    {"field_name": "Mailing Address - City, State, Zip", "ontology_class": "BallotMailingAddress", "section": "Mailing Address", "notes": "City, State, Zip Code for mailing"},
+    {"field_name": "Telephone Number", "ontology_class": "PhoneNumber", "section": "Contact", "notes": "Include area code"},
+    {"field_name": "Signature of Registered Voter", "ontology_class": "VoterSignature", "section": "Signature", "notes": "Required; sworn statement"},
+    {"field_name": "Date", "ontology_class": "SignatureDate", "section": "Signature", "notes": "Date signed"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Missouri absentee ballot request form (§§ 115.279, 115.283, 115.284, 115.427, effective 8/2022). Requests must be received by 5:00 p.m. on second Wednesday prior to election day if ballot is mailed. Deadline for in-person absentee voting is 5:00 p.m. on day before election. First-time mail voters must provide copy of: (1) nonexpired MO driver's/nondriver's license, (2) nonexpired military ID including veteran's ID, (3) nonexpired US passport, or (4) other photo ID issued by US or Missouri that is either not expired or expired after most recent general election. Six reasons allowed for requesting absentee ballot."
+}

@@ -1,0 +1,30 @@
+{
+  "state_code": "WY",
+  "state_name": "Wyoming",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "Last Name", "ontology_class": "LastName", "section": "Voter Information", "notes": "Required"},
+    {"field_name": "First Name", "ontology_class": "FirstName", "section": "Voter Information", "notes": "Required"},
+    {"field_name": "Middle", "ontology_class": "MiddleName", "section": "Voter Information", "notes": "Middle name or initial"},
+    {"field_name": "County Residential Address", "ontology_class": "ResidentialAddress", "section": "Voter Information", "notes": "Required"},
+    {"field_name": "City", "ontology_class": "ResidentialAddress", "section": "Voter Information", "notes": "City"},
+    {"field_name": "State", "ontology_class": "ResidentialAddress", "section": "Voter Information", "notes": "State"},
+    {"field_name": "Zip", "ontology_class": "ResidentialAddress", "section": "Voter Information", "notes": "Zip code"},
+    {"field_name": "Date of Birth", "ontology_class": "DateOfBirth", "section": "Voter Information", "notes": "Required"},
+    {"field_name": "Contact Phone Number", "ontology_class": "PhoneNumber", "section": "Voter Information", "notes": "Required"},
+    {"field_name": "Active Military?", "ontology_class": "MilitaryOrOverseasStatus", "section": "Voter Information", "notes": "Y / N"},
+    {"field_name": "Email", "ontology_class": "EmailAddress", "section": "Voter Information", "notes": "Optional"},
+    {"field_name": "Mail My Ballot To", "ontology_class": "BallotMailingAddress", "section": "Ballot Mailing", "notes": "Address where ballot should be mailed"},
+    {"field_name": "Mailing City", "ontology_class": "BallotMailingAddress", "section": "Ballot Mailing", "notes": "City"},
+    {"field_name": "Mailing State", "ontology_class": "BallotMailingAddress", "section": "Ballot Mailing", "notes": "State"},
+    {"field_name": "Mailing Zip", "ontology_class": "BallotMailingAddress", "section": "Ballot Mailing", "notes": "Zip code"},
+    {"field_name": "2026 PRIMARY", "ontology_class": "ElectionDate", "section": "Elections Requested", "notes": "Check for 2026 Primary; Political Party required"},
+    {"field_name": "2026 GENERAL", "ontology_class": "ElectionDate", "section": "Elections Requested", "notes": "Check for 2026 General"},
+    {"field_name": "Political Party", "ontology_class": "PartyAffiliation", "section": "Elections Requested", "notes": "Required for Primary; must be same as currently registered"},
+    {"field_name": "I hereby grant (name) permission to pick up ballot", "ontology_class": "BallotDeliveryAgent", "section": "Designate Pickup", "notes": "If want someone to pick up and deliver ballot; MUST fill in and designate individual"},
+    {"field_name": "Voter Signature", "ontology_class": "VoterSignature", "section": "Signature", "notes": "Required; state registered voter and entitled to vote in election indicated"},
+    {"field_name": "Date", "ontology_class": "SignatureDate", "section": "Signature", "notes": "Date signed"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Wyoming Absentee Ballot Request Form (08/2025). Must be registered voter to request Absentee Ballot. For Primary Election, political party is required and must be same political party currently registered with. To change political party, contact county clerk. If not registered voter, use Wyoming Voter Registration Form and send to county clerk when completed. Check all elections that apply: 2026 PRIMARY (specify Political Party) and/or 2026 GENERAL. If want someone to pick up ballot and deliver to you, MUST fill in section and designate individual by granting permission to named person. Voter signature required; certify registered voter and entitled to vote in election indicated above. To receive Absentee Ballot, form must be completed and returned to County Clerk. Wyoming County Clerk Contact Information available. Office Use Only section: Precinct, Entered in WyoReg, Mailed, Status (Accepted/Rejected), Rejection Reason."
+}

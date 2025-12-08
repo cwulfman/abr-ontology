@@ -1,0 +1,213 @@
+{
+  "state_code": "DE",
+  "state_name": "Delaware",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Full name",
+      "ontology_class": "PersonName",
+      "section": "Voter Information",
+      "notes": "Full name field"
+    },
+    {
+      "field_name": "Political Party Affiliation",
+      "ontology_class": "PartyAffiliation",
+      "section": "Voter Information",
+      "notes": "Party affiliation"
+    },
+    {
+      "field_name": "Phone #",
+      "ontology_class": "PhoneNumber",
+      "section": "Voter Information",
+      "notes": "Phone number"
+    },
+    {
+      "field_name": "House or Apartment # and Street",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Delaware home address"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Part of home address"
+    },
+    {
+      "field_name": "Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "Voter Information",
+      "notes": "Part of home address"
+    },
+    {
+      "field_name": "Birth date",
+      "ontology_class": "DateOfBirth",
+      "section": "Voter Information",
+      "notes": "Date of birth"
+    },
+    {
+      "field_name": "Social Security Number",
+      "ontology_class": "Last4SSN",
+      "section": "Voter Information",
+      "notes": "Optional - see disclosure on reverse"
+    },
+    {
+      "field_name": "Email address",
+      "ontology_class": "EmailAddress",
+      "section": "Voter Information",
+      "notes": "Optional - used to update application and ballot status"
+    },
+    {
+      "field_name": "Address where you want your absentee ballot sent",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Voter Information",
+      "notes": "If different than home address"
+    },
+    {
+      "field_name": "Where You Expect to be on Election Day",
+      "ontology_class": "TemporaryAbsenceAddress",
+      "section": "Voter Information",
+      "notes": "Optional - City & State or City & Country"
+    },
+    {
+      "field_name": "Election Day phone #",
+      "ontology_class": "PhoneNumber",
+      "section": "Voter Information",
+      "notes": "Optional"
+    },
+    {
+      "field_name": "I am in public service of the United States or State of Delaware",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 1: Public service, US citizen temporarily outside US, spouse/dependent, or absent due to illness while serving armed forces"
+    },
+    {
+      "field_name": "I am in the armed forces or merchant marine",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 2: Armed forces, merchant marine, Red Cross, or USO"
+    },
+    {
+      "field_name": "Due to the nature of my business or occupation",
+      "ontology_class": "WorkConflictReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 3: Includes providing care, students, incarcerated persons"
+    },
+    {
+      "field_name": "Business or occupation of providing care",
+      "ontology_class": "CaregiverForDisabledPersonReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Sub-reason under 3: Caring for parent/spouse/child at home requiring constant care"
+    },
+    {
+      "field_name": "Students",
+      "ontology_class": "StudentStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Sub-reason under 3"
+    },
+    {
+      "field_name": "Otherwise eligible persons who are incarcerated",
+      "ontology_class": "IncarcerationReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Sub-reason under 3"
+    },
+    {
+      "field_name": "I am sick or physically disabled",
+      "ontology_class": "IllnessOrDisabilityReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 4: Temporarily or permanently"
+    },
+    {
+      "field_name": "I am absent from the district while on vacation",
+      "ontology_class": "OutOfCountyTravelReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 5"
+    },
+    {
+      "field_name": "Unable to vote due to religious tenets or teachings",
+      "ontology_class": "ReligiousConflictReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 6: At certain time or on certain day"
+    },
+    {
+      "field_name": "Authorized pursuant to Federal UOCAVA",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 7: Uniformed and Overseas Citizens Absentee Voting Act"
+    },
+    {
+      "field_name": "Otherwise authorized by federal law",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Reason 8"
+    },
+    {
+      "field_name": "Send my ballot by: mail, fax, or email",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "Special Qualification - Electronic Delivery",
+      "notes": "Only for reason 4 voters"
+    },
+    {
+      "field_name": "FAX #",
+      "ontology_class": "BallotFaxNumber",
+      "section": "Special Qualification - Electronic Delivery",
+      "notes": "Required if want ballot faxed"
+    },
+    {
+      "field_name": "EMAIL for ballot delivery",
+      "ontology_class": "BallotEmailAddress",
+      "section": "Special Qualification - Electronic Delivery",
+      "notes": "Required if want ballot emailed"
+    },
+    {
+      "field_name": "Make me a permanent absentee voter",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Special Qualification - Permanent Absentee",
+      "notes": "For reasons 1, 2, 4, 7, 8, or caregiver business/occupation"
+    },
+    {
+      "field_name": "Signature",
+      "ontology_class": "VoterSignature",
+      "section": "Voter Declaration",
+      "notes": "Required signature under penalty of perjury"
+    },
+    {
+      "field_name": "Date",
+      "ontology_class": "SignatureDate",
+      "section": "Voter Declaration",
+      "notes": "Date signed"
+    },
+    {
+      "field_name": "Primary",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for primary election"
+    },
+    {
+      "field_name": "Presidential Primary",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for presidential primary"
+    },
+    {
+      "field_name": "General",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for general election"
+    },
+    {
+      "field_name": "Special",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for special election"
+    },
+    {
+      "field_name": "All elections",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Election Selection",
+      "notes": "Request for all elections"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Delaware form can be submitted by email, FAX, or mail. Must be received no later than 4 days before election. Members of Uniformed Services and citizens outside US should use Federal Post Card Application. Can apply online at ivote.de.gov. Social Security Number disclosure is voluntary."
+}

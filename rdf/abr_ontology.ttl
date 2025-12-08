@@ -391,1068 +391,3449 @@ oset:StatementNoIDAvailable a owl:Class ;
 # State Form Classes and Restrictions
 #################################################################
 
-oset:AR_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "AR Absentee Voter Registration Form" .
 
-oset:NJ_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "NJ Absentee Voter Registration Form" .
+#################################################################
+# State Form Classes and Restrictions
+#################################################################
 
-oset:NH_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "NH Absentee Voter Registration Form" .
+# Updated State Form Definitions
+# Generated from comprehensive form analyses
 
-oset:MD_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+oset:AK_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotMailingAddress
-        ] ,
+          owl:someValuesFrom oset:AddressConfidentialityProgramParticipation
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
+          owl:someValuesFrom oset:AgeRequirement
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "MD Absentee Voter Registration Form" .
-
-oset:LA_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "LA Absentee Voter Registration Form" .
-
-oset:ME_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "ME Absentee Voter Registration Form" .
-
-oset:MA_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "MA Absentee Voter Registration Form" .
-
-oset:NM_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "NM Absentee Voter Registration Form" .
-
-oset:WY_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotMailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "WY Absentee Voter Registration Form" .
-
-oset:OH_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WorkConflictReason
-        ] ;
-    rdfs:label "OH Absentee Voter Registration Form" .
-
-oset:NY_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "NY Absentee Voter Registration Form" .
-
-oset:MT_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "MT Absentee Voter Registration Form" .
-
-oset:OK_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:NursingHomeReason
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "OK Absentee Voter Registration Form" .
-
-oset:KS_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "KS Absentee Voter Registration Form" .
-
-oset:IA_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "IA Absentee Voter Registration Form" .
-
-oset:IN_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ;
-    rdfs:label "IN Absentee Voter Registration Form" .
-
-oset:GA_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "GA Absentee Voter Registration Form" .
-
-oset:SD_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:CopyOfPhotoID
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "SD Absentee Voter Registration Form" .
-
-oset:ID_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm ;
-    rdfs:label "ID Absentee Voter Registration Form" .
-
-oset:FL_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotDeliveryAgent
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DisabilityStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "FL Absentee Voter Registration Form" .
-
-oset:PA_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:StatementNoIDAvailable
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "PA Absentee Voter Registration Form" .
-
-oset:DE_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:BallotFaxNumber
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:BallotMailingAddress
-        ] ,
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CitizenshipStatus
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:DateOfBirth
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ;
-    rdfs:label "DE Absentee Voter Registration Form" .
-
-oset:MN_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotMailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionType
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:EmailAddress
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
+          owl:someValuesFrom oset:FormerName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Gender
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:PhoneNumber
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ResidentialAddress
-        ] ,
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:StatementNoIDAvailable
-        ] ;
-    rdfs:label "MN Absentee Voter Registration Form" .
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:TemporaryAbsenceAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterPIN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "AK Absentee Voter Registration Form" .
 
 oset:AL_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgeRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CaregiverForDisabledPersonReason
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:DateOfBirth
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionParty
-        ] ,
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionOfficialDutiesReason
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PartyAffiliation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "AL Absentee Voter Registration Form" .
-
-oset:NC_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:AssistantInformation
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotFaxNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DisabilityStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:EmailAddress
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "NC Absentee Voter Registration Form" .
-
-oset:MO_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DisabilityStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:IllnessOrDisabilityReason
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:IncarcerationReason
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:NursingHomeReason
-        ] ,
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:OutOfCountyTravelReason
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ReligiousConflictReason
-        ] ,
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:WorkConflictReason
-        ] ;
-    rdfs:label "MO Absentee Voter Registration Form" .
-
-oset:TX_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:AssistantInformation
-        ] ,
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DisabilityStatus
-        ] ,
+          owl:someValuesFrom oset:StudentStatus
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:WitnessInformation
-        ] ;
-    rdfs:label "TX Absentee Voter Registration Form" .
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "AL Absentee Voter Registration Form" .
 
-oset:ND_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+oset:AR_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:AssistantInformation
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotFaxNumber
-        ] ,
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MilitaryOrOverseasStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ;
-    rdfs:label "ND Absentee Voter Registration Form" .
-
-oset:CT_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DisabilityStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ReligiousConflictReason
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ResidentialAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "CT Absentee Voter Registration Form" .
-
-oset:AK_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotFaxNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionType
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MilitaryOrOverseasStatus
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ;
-    rdfs:label "AK Absentee Voter Registration Form" .
-
-oset:VT_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:BallotEmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotFaxNumber
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:BallotMailingAddress
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionType
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:EmailAddress
-        ] ,
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NursingHomeReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:PersonName
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:PhoneNumber
-        ] ,
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ResidentialAddress
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "VT Absentee Voter Registration Form" .
+        ]
+        ;
+    rdfs:label "AR Absentee Voter Registration Form" .
 
-oset:MI_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
+oset:CT_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotDeliveryAgent
-        ] ,
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:DateOfBirth
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionDate
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionRangeRequest
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:EmailAddress
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PersonName
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:PhoneNumber
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:VoterSignature
-        ] ;
-    rdfs:label "MI Absentee Voter Registration Form" .
-
-oset:NE_Form a owl:Class ;
-    rdfs:subClassOf oset:ABRForm,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:BallotDeliveryAgent
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:DateOfBirth
-        ] ,
-        [ a owl:Restriction ;
-          owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:ElectionContext
-        ] ,
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionDate
-        ] ,
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionOfficialDutiesReason
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:ElectionType
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:EmailAddress
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:IdentificationNumbers
-        ] ,
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
-          owl:someValuesFrom oset:MailingAddress
-        ] ,
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:PersonName
-        ] ,
+        ]
+        ,
         [ a owl:Restriction ;
           owl:onProperty oset:capturesInformationType ;
           owl:someValuesFrom oset:PhoneNumber
-        ] ;
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "CT Absentee Voter Registration Form" .
+
+oset:DE_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CaregiverForDisabledPersonReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StudentStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:TemporaryAbsenceAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "DE Absentee Voter Registration Form" .
+
+oset:FL_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SpecificElectionIdentifier
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "FL Absentee Voter Registration Form" .
+
+oset:GA_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgeRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StateIDNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "GA Absentee Voter Registration Form" .
+
+oset:IA_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterPIN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "IA Absentee Voter Registration Form" .
+
+oset:ID_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "ID Absentee Voter Registration Form" .
+
+oset:IN_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgeRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CaregiverForDisabledPersonReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionOfficialDutiesReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FormerName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:RegistrationLocation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterPIN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "IN Absentee Voter Registration Form" .
+
+oset:KS_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "KS Absentee Voter Registration Form" .
+
+oset:LA_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FormerName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:RegistrationLocation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StudentStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "LA Absentee Voter Registration Form" .
+
+oset:MA_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "MA Absentee Voter Registration Form" .
+
+oset:MD_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "MD Absentee Voter Registration Form" .
+
+oset:ME_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentContactInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "ME Absentee Voter Registration Form" .
+
+oset:MI_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "MI Absentee Voter Registration Form" .
+
+oset:MN_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "MN Absentee Voter Registration Form" .
+
+oset:MO_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AddressConfidentialityProgramParticipation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "MO Absentee Voter Registration Form" .
+
+oset:MT_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "MT Absentee Voter Registration Form" .
+
+oset:NC_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FormerName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "NC Absentee Voter Registration Form" .
+
+oset:ND_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IdentificationNumbers
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PassportOrMilitaryID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StateIDNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:TribalID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessInformation
+        ]
+        ;
+    rdfs:label "ND Absentee Voter Registration Form" .
+
+oset:NE_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
     rdfs:label "NE Absentee Voter Registration Form" .
 
+oset:NH_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CaregiverForDisabledPersonReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NotaryCommissionExpiration
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NotaryInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NotaryName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:RegistrationLocation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ReligiousConflictReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WorkConflictReason
+        ]
+        ;
+    rdfs:label "NH Absentee Voter Registration Form" .
 
-#################################################################
+oset:NJ_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "NJ Absentee Voter Registration Form" .
+
+oset:NM_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "NM Absentee Voter Registration Form" .
+
+oset:NY_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PersonName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessInformation
+        ]
+        ;
+    rdfs:label "NY Absentee Voter Registration Form" .
+
+oset:OH_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionOfficialDutiesReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "OH Absentee Voter Registration Form" .
+
+oset:OK_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CaregiverForDisabledPersonReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IllnessOrDisabilityReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NursingHomeReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "OK Absentee Voter Registration Form" .
+
+oset:PA_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:RegistrationLocation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessInformation
+        ]
+        ;
+    rdfs:label "PA Absentee Voter Registration Form" .
+
+oset:SD_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:CopyOfPhotoID
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NotaryCommissionExpiration
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NotaryInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidencyRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StudentStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "SD Absentee Voter Registration Form" .
+
+oset:TX_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgeRequirement
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DriverLicenseNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ExpectedChildbirthReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:IncarcerationReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:Last4SSN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:OutOfCountyTravelReason
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:RegistrationLocation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:StatementNoIDAvailable
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterPIN
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:WitnessInformation
+        ]
+        ;
+    rdfs:label "TX Absentee Voter Registration Form" .
+
+oset:VT_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AgentRelationship
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionType
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FormerName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "VT Absentee Voter Registration Form" .
+
+oset:WI_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:AssistantInformation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryMethod
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotEmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotFaxNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DisabilityStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionRangeRequest
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:NameSuffix
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "WI Absentee Voter Registration Form" .
+
+oset:WY_Form a owl:Class ;
+    rdfs:subClassOf oset:ABRForm
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotDeliveryAgent
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:BallotMailingAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:DateOfBirth
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ElectionDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:EmailAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:FirstName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:LastName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MiddleName
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:MilitaryOrOverseasStatus
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PartyAffiliation
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:PhoneNumber
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:ResidentialAddress
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:SignatureDate
+        ]
+        ,
+        [ a owl:Restriction ;
+          owl:onProperty oset:capturesInformationType ;
+          owl:someValuesFrom oset:VoterSignature
+        ]
+        ;
+    rdfs:label "WY Absentee Voter Registration Form" .
+
 # Required accompanying documentation (new)
 #################################################################
 

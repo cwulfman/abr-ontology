@@ -1,0 +1,195 @@
+{
+  "state_code": "CT",
+  "state_name": "Connecticut",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Name",
+      "ontology_class": "PersonName",
+      "section": "Section I - Applicant's Information",
+      "notes": "Full name"
+    },
+    {
+      "field_name": "Date of Birth",
+      "ontology_class": "DateOfBirth",
+      "section": "Section I - Applicant's Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Home Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "Section I - Applicant's Information",
+      "notes": "Number, Street, Town"
+    },
+    {
+      "field_name": "Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "Section I - Applicant's Information",
+      "notes": "Part of address"
+    },
+    {
+      "field_name": "Telephone No.",
+      "ontology_class": "PhoneNumber",
+      "section": "Section I - Applicant's Information",
+      "notes": "Contact phone"
+    },
+    {
+      "field_name": "E-mail Address",
+      "ontology_class": "EmailAddress",
+      "section": "Section I - Applicant's Information",
+      "notes": "Email address"
+    },
+    {
+      "field_name": "Given to me personally",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "Must apply in person; not mailed"
+    },
+    {
+      "field_name": "Mailed to me personally",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "With mailing address if different"
+    },
+    {
+      "field_name": "Mailing Address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "If different from home address"
+    },
+    {
+      "field_name": "Supervised Ballot",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "For institution residents where supervised balloting conducted"
+    },
+    {
+      "field_name": "E-mailed to me (Section V)",
+      "ontology_class": "BallotEmailAddress",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "For Section V military/overseas applicants only"
+    },
+    {
+      "field_name": "E-mailed to me (Accessible ballot)",
+      "ontology_class": "BallotEmailAddress",
+      "section": "Section II - Delivery of Absentee Ballot",
+      "notes": "For accessible ballot only"
+    },
+    {
+      "field_name": "Election",
+      "ontology_class": "ElectionType",
+      "section": "Section III - Purpose of Application",
+      "notes": "Checkbox for election"
+    },
+    {
+      "field_name": "Primary",
+      "ontology_class": "ElectionType",
+      "section": "Section III - Purpose of Application",
+      "notes": "Checkbox for primary"
+    },
+    {
+      "field_name": "Referendum",
+      "ontology_class": "ElectionType",
+      "section": "Section III - Purpose of Application",
+      "notes": "Checkbox for referendum"
+    },
+    {
+      "field_name": "Date of Election, Primary or Referendum",
+      "ontology_class": "ElectionDate",
+      "section": "Section III - Purpose of Application",
+      "notes": "Specific date"
+    },
+    {
+      "field_name": "Party for Primary",
+      "ontology_class": "PartyAffiliation",
+      "section": "Section III - Purpose of Application",
+      "notes": "Specify which party if primary"
+    },
+    {
+      "field_name": "My active service in the Armed Forces",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "Reason checkbox"
+    },
+    {
+      "field_name": "My absence from my town of residence",
+      "ontology_class": "OutOfCountyTravelReason",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "Reason checkbox"
+    },
+    {
+      "field_name": "Sickness",
+      "ontology_class": "IllnessOrDisabilityReason",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "Reason checkbox"
+    },
+    {
+      "field_name": "My religious tenets forbid secular activity",
+      "ontology_class": "ReligiousConflictReason",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "Reason checkbox"
+    },
+    {
+      "field_name": "My duties as election official",
+      "ontology_class": "ElectionOfficialDutiesReason",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "At polling place other than own; reason checkbox"
+    },
+    {
+      "field_name": "Physical disability",
+      "ontology_class": "DisabilityStatus",
+      "section": "Section IV - Statement of Applicant",
+      "notes": "Reason checkbox"
+    },
+    {
+      "field_name": "I am a member of the armed forces needing additional time",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section V - Military and Overseas",
+      "notes": "Due to military contingencies; blank ballot 90 days before election"
+    },
+    {
+      "field_name": "I am an elector temporarily living overseas",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section V - Military and Overseas",
+      "notes": "Or member of armed forces/spouse/dependent; blank ballot ~45 days before"
+    },
+    {
+      "field_name": "Signature of Applicant",
+      "ontology_class": "VoterSignature",
+      "section": "Section VI - Applicant's Declaration",
+      "notes": "Required signature"
+    },
+    {
+      "field_name": "Date Signed",
+      "ontology_class": "SignatureDate",
+      "section": "Section VI - Applicant's Declaration",
+      "notes": "Date of signature"
+    },
+    {
+      "field_name": "Signature of Person Providing Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section VII - Assistance",
+      "notes": "If assistance provided"
+    },
+    {
+      "field_name": "Printed Name of Person Providing Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section VII - Assistance",
+      "notes": "If assistance provided"
+    },
+    {
+      "field_name": "Tel. No. of Person Providing Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section VII - Assistance",
+      "notes": "If assistance provided"
+    },
+    {
+      "field_name": "Residence Address of Person Providing Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section VII - Assistance",
+      "notes": "If assistance provided"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Connecticut requires separate application for each election, primary, and referendum. Application can be faxed but must also mail with original signature, or ballot won't be counted. Blank ballots can be sent to military beginning 90 days before regular election and to overseas citizens/military 45 days before regular election, ~30 days before primary."
+}

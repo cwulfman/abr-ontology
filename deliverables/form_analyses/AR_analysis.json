@@ -1,0 +1,213 @@
+{
+  "state_code": "AR",
+  "state_name": "Arkansas",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "I will be unavoidably absent from my polling site on Election Day",
+      "ontology_class": "OutOfCountyTravelReason",
+      "section": "Section 1 - Reason for Requesting",
+      "notes": "Checkbox reason"
+    },
+    {
+      "field_name": "I will be unable to attend the polls due to illness or physical disability",
+      "ontology_class": "IllnessOrDisabilityReason",
+      "section": "Section 1 - Reason for Requesting",
+      "notes": "Checkbox reason"
+    },
+    {
+      "field_name": "I am a resident of a long-term care or residential facility",
+      "ontology_class": "NursingHomeReason",
+      "section": "Section 1 - Reason for Requesting",
+      "notes": "Checkbox reason; facility must be licensed by state"
+    },
+    {
+      "field_name": "I will be unable to attend due to religious observance",
+      "ontology_class": "ReligiousConflictReason",
+      "section": "Section 1 - Reason for Requesting",
+      "notes": "Religious discipline or holiday"
+    },
+    {
+      "field_name": "I currently reside within the county",
+      "ontology_class": "ResidencyRequirement",
+      "section": "Section 2 - Residence",
+      "notes": "Checkbox option"
+    },
+    {
+      "field_name": "I currently reside outside of the county",
+      "ontology_class": "ResidencyRequirement",
+      "section": "Section 2 - Residence",
+      "notes": "Checkbox option"
+    },
+    {
+      "field_name": "I am a United States citizen residing outside territorial limits",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section 2 - Residence",
+      "notes": "UOCAVA voter"
+    },
+    {
+      "field_name": "I am an active service member of US armed services",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section 2 - Residence",
+      "notes": "UOCAVA voter; residing outside county"
+    },
+    {
+      "field_name": "I am a spouse or dependent of active service member",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Section 2 - Residence",
+      "notes": "UOCAVA voter"
+    },
+    {
+      "field_name": "Preferential Primary/Nonpartisan Judicial General",
+      "ontology_class": "ElectionType",
+      "section": "Section 3 - Election Selection",
+      "notes": "Spring of even-numbered years"
+    },
+    {
+      "field_name": "Party Preference: Democratic",
+      "ontology_class": "PartyAffiliation",
+      "section": "Section 3 - Election Selection",
+      "notes": "For primary election"
+    },
+    {
+      "field_name": "Party Preference: Republican",
+      "ontology_class": "PartyAffiliation",
+      "section": "Section 3 - Election Selection",
+      "notes": "For primary election"
+    },
+    {
+      "field_name": "Party Preference: Nonpartisan",
+      "ontology_class": "PartyAffiliation",
+      "section": "Section 3 - Election Selection",
+      "notes": "For primary election"
+    },
+    {
+      "field_name": "November General Election/Nonpartisan Judicial Runoff",
+      "ontology_class": "ElectionType",
+      "section": "Section 3 - Election Selection",
+      "notes": "November election"
+    },
+    {
+      "field_name": "Annual School Election",
+      "ontology_class": "ElectionType",
+      "section": "Section 3 - Election Selection",
+      "notes": "School election"
+    },
+    {
+      "field_name": "Special Election",
+      "ontology_class": "ElectionType",
+      "section": "Section 3 - Election Selection",
+      "notes": "With date specification"
+    },
+    {
+      "field_name": "All elections for one calendar year",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Section 3 - Election Selection",
+      "notes": "Requires disability, long-term care, or living outside county"
+    },
+    {
+      "field_name": "All elections through next Federal General Election Cycle",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Section 3 - Election Selection",
+      "notes": "UOCAVA voters only"
+    },
+    {
+      "field_name": "I will pick up my ballot from county clerk office",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "Section 4 - Ballot Delivery",
+      "notes": "Pickup option"
+    },
+    {
+      "field_name": "Email ballot delivery",
+      "ontology_class": "BallotEmailAddress",
+      "section": "Section 4 - Ballot Delivery",
+      "notes": "Only available for UOCAVA voters"
+    },
+    {
+      "field_name": "Mail ballot to address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Section 4 - Ballot Delivery",
+      "notes": "Mailing address for ballot"
+    },
+    {
+      "field_name": "I received assistance in completing application",
+      "ontology_class": "AssistantInformation",
+      "section": "Section 5 - Assistance",
+      "notes": "Checkbox with assistant details required if checked"
+    },
+    {
+      "field_name": "Printed Name of Person Giving Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section 5 - Assistance",
+      "notes": "If assistance received"
+    },
+    {
+      "field_name": "Signature of Person Giving Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section 5 - Assistance",
+      "notes": "If assistance received"
+    },
+    {
+      "field_name": "Residential Address of Person Giving Assistance",
+      "ontology_class": "AssistantInformation",
+      "section": "Section 5 - Assistance",
+      "notes": "If assistance received"
+    },
+    {
+      "field_name": "Printed Name of Absentee Voter",
+      "ontology_class": "PersonName",
+      "section": "Section 6 - Voter Information",
+      "notes": "Full name"
+    },
+    {
+      "field_name": "Date of Birth of Absentee Voter",
+      "ontology_class": "DateOfBirth",
+      "section": "Section 6 - Voter Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Residential Address of Absentee Voter",
+      "ontology_class": "ResidentialAddress",
+      "section": "Section 6 - Voter Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Phone Number of Absentee Voter",
+      "ontology_class": "PhoneNumber",
+      "section": "Section 6 - Voter Information",
+      "notes": "Required"
+    },
+    {
+      "field_name": "City, State, and Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "Section 6 - Voter Information",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Signature of Absentee Voter",
+      "ontology_class": "VoterSignature",
+      "section": "Section 6 - Voter Information",
+      "notes": "Required signature"
+    },
+    {
+      "field_name": "Email Address of Absentee Voter",
+      "ontology_class": "EmailAddress",
+      "section": "Section 6 - Voter Information",
+      "notes": "Email address"
+    },
+    {
+      "field_name": "Printed Name of Bearer/Administrator/Agent",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Pickup Section",
+      "notes": "If picked up via designated bearer"
+    },
+    {
+      "field_name": "Signature of Bearer/Administrator/Agent",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Pickup Section",
+      "notes": "If picked up via designated bearer"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Arkansas form requires photo ID for bearer/administrator/agent. Bearer may obtain ballots for no more than 2 voters per election. Application can be returned via mail, fax, email, or hand delivery. UOCAVA voters have special provisions for email ballot delivery and extended election coverage."
+}

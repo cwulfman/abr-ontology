@@ -1,0 +1,237 @@
+{
+  "state_code": "AK",
+  "state_name": "Alaska",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "All in Calendar Year",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "1 - Elections",
+      "notes": "Checkbox to request absentee ballot for all elections in calendar year"
+    },
+    {
+      "field_name": "Primary (August)",
+      "ontology_class": "ElectionType",
+      "section": "1 - Elections",
+      "notes": "Checkbox for primary election"
+    },
+    {
+      "field_name": "General (November)",
+      "ontology_class": "ElectionType",
+      "section": "1 - Elections",
+      "notes": "Checkbox for general election"
+    },
+    {
+      "field_name": "REAA (October)",
+      "ontology_class": "ElectionType",
+      "section": "1 - Elections",
+      "notes": "Checkbox for REAA election"
+    },
+    {
+      "field_name": "Special",
+      "ontology_class": "ElectionType",
+      "section": "1 - Elections",
+      "notes": "Checkbox for special election"
+    },
+    {
+      "field_name": "Are you a citizen of the United States?",
+      "ontology_class": "CitizenshipStatus",
+      "section": "2 - Eligibility",
+      "notes": "Yes/No checkbox"
+    },
+    {
+      "field_name": "Are you at least 18 years of age or within 90 days of your 18th birthday?",
+      "ontology_class": "AgeRequirement",
+      "section": "2 - Eligibility",
+      "notes": "Yes/No checkbox"
+    },
+    {
+      "field_name": "Last Name",
+      "ontology_class": "LastName",
+      "section": "3 - Print your name",
+      "notes": "Text field for last name"
+    },
+    {
+      "field_name": "First Name",
+      "ontology_class": "FirstName",
+      "section": "3 - Print your name",
+      "notes": "Text field for first name"
+    },
+    {
+      "field_name": "Middle Name",
+      "ontology_class": "MiddleName",
+      "section": "3 - Print your name",
+      "notes": "Text field for middle name"
+    },
+    {
+      "field_name": "Name Suffix",
+      "ontology_class": "NameSuffix",
+      "section": "3 - Print your name",
+      "notes": "Text field for suffix (Jr., Sr., III, etc.)"
+    },
+    {
+      "field_name": "Former name (if changed)",
+      "ontology_class": "FormerName",
+      "section": "4 - Other information",
+      "notes": "Text field for previous name if changed"
+    },
+    {
+      "field_name": "Voter number (if known)",
+      "ontology_class": "VoterPIN",
+      "section": "4 - Other information",
+      "notes": "Text field for voter registration number"
+    },
+    {
+      "field_name": "House #",
+      "ontology_class": "ResidentialAddress",
+      "section": "5 - Alaska residence address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Street Name",
+      "ontology_class": "ResidentialAddress",
+      "section": "5 - Alaska residence address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Apt #",
+      "ontology_class": "ResidentialAddress",
+      "section": "5 - Alaska residence address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "5 - Alaska residence address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Keep my residence address confidential",
+      "ontology_class": "AddressConfidentialityProgramParticipation",
+      "section": "5 - Alaska residence address",
+      "notes": "Checkbox to request confidential address"
+    },
+    {
+      "field_name": "The address where you receive mail (Permanent)",
+      "ontology_class": "MailingAddress",
+      "section": "6",
+      "notes": "Permanent mailing address (can be different from residence)"
+    },
+    {
+      "field_name": "SSN or Last 4",
+      "ontology_class": "Last4SSN",
+      "section": "7 - Identifiers",
+      "notes": "Social Security Number or last 4 digits"
+    },
+    {
+      "field_name": "Alaska driver's license or State ID No.",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "7 - Identifiers",
+      "notes": "Alaska DL or State ID number"
+    },
+    {
+      "field_name": "I do not have an SSN or AK driver's license or State ID",
+      "ontology_class": "StatementNoIDAvailable",
+      "section": "7 - Identifiers",
+      "notes": "Checkbox if no standard ID available"
+    },
+    {
+      "field_name": "Birthdate",
+      "ontology_class": "DateOfBirth",
+      "section": "8 - Birthdate and Gender",
+      "notes": "Required field"
+    },
+    {
+      "field_name": "Gender",
+      "ontology_class": "Gender",
+      "section": "8 - Birthdate and Gender",
+      "notes": "Male/Female selection"
+    },
+    {
+      "field_name": "Write political affiliation",
+      "ontology_class": "PartyAffiliation",
+      "section": "9 - Political party affiliation",
+      "notes": "Text field for party affiliation"
+    },
+    {
+      "field_name": "Active member of the Uniformed Services, Merchant Marine, or commissioned corps or an eligible spouse or dependent",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "10 - Military and Overseas Voters",
+      "notes": "Checkbox for military status"
+    },
+    {
+      "field_name": "I am residing temporarily or permanently overseas and I intend to return to Alaska",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "10 - Military and Overseas Voters",
+      "notes": "Checkbox for overseas voter status"
+    },
+    {
+      "field_name": "Mail",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "10 - Military and Overseas Voters",
+      "notes": "Checkbox for mail delivery"
+    },
+    {
+      "field_name": "Online",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "10 - Military and Overseas Voters",
+      "notes": "Checkbox for online delivery (requires email in box 13)"
+    },
+    {
+      "field_name": "Fax",
+      "ontology_class": "BallotDeliveryMethod",
+      "section": "10 - Military and Overseas Voters",
+      "notes": "Checkbox for fax delivery (requires fax in box 13)"
+    },
+    {
+      "field_name": "Yes, I will be in remote Alaska or overseas where mail service is limited",
+      "ontology_class": "TemporaryAbsenceAddress",
+      "section": "11 - In remote Alaska or overseas?",
+      "notes": "Checkbox indicating need for 45-day advance ballot"
+    },
+    {
+      "field_name": "Ballot mailing address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "12",
+      "notes": "Address where ballot will be sent if different from permanent mailing address"
+    },
+    {
+      "field_name": "Day Phone",
+      "ontology_class": "PhoneNumber",
+      "section": "13 - Contact information",
+      "notes": "Daytime phone number"
+    },
+    {
+      "field_name": "Evening Phone",
+      "ontology_class": "PhoneNumber",
+      "section": "13 - Contact information",
+      "notes": "Evening phone number"
+    },
+    {
+      "field_name": "Email",
+      "ontology_class": "EmailAddress",
+      "section": "13 - Contact information",
+      "notes": "Email address"
+    },
+    {
+      "field_name": "Fax No.",
+      "ontology_class": "BallotFaxNumber",
+      "section": "13 - Contact information",
+      "notes": "Fax number for ballot delivery"
+    },
+    {
+      "field_name": "Signature",
+      "ontology_class": "VoterSignature",
+      "section": "14 - Certificate Read and Sign",
+      "notes": "Required handwritten signature (not digital)"
+    },
+    {
+      "field_name": "Date",
+      "ontology_class": "SignatureDate",
+      "section": "14 - Certificate Read and Sign",
+      "notes": "Date of signature"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Alaska form also requires submission of copy of ID (driver's license, state ID, passport, birth certificate, hunting and fishing license, or current and valid photo ID) when registering to vote. This is mentioned in instructions but not a form field itself."
+}

@@ -1,0 +1,19 @@
+{
+  "state_code": "NM",
+  "state_name": "New Mexico",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "County", "ontology_class": "ResidentialAddress", "section": "Top", "notes": "County - Required"},
+    {"field_name": "Print or type voter's name as registered", "ontology_class": "PersonName", "section": "Required Information", "notes": "Full name as registered - Required"},
+    {"field_name": "Address as registered: Street-City-State-Zip", "ontology_class": "ResidentialAddress", "section": "Required Information", "notes": "Complete address - Required"},
+    {"field_name": "Year of Birth", "ontology_class": "DateOfBirth", "section": "Required Information", "notes": "YYYY format - Required"},
+    {"field_name": "TODAY'S DATE", "ontology_class": "SignatureDate", "section": "Required Information", "notes": "Date application completed - Required"},
+    {"field_name": "SIGNATURE of registered voter", "ontology_class": "VoterSignature", "section": "Required Information", "notes": "Required"},
+    {"field_name": "Mail ballot to address below", "ontology_class": "BallotMailingAddress", "section": "Optional Information", "notes": "Complete if different than registered address"},
+    {"field_name": "Email address", "ontology_class": "EmailAddress", "section": "Optional Information", "notes": "Optional; for county clerk questions about application"},
+    {"field_name": "Telephone", "ontology_class": "PhoneNumber", "section": "Optional Information", "notes": "Optional; for county clerk questions about application"},
+    {"field_name": "Permanent Absentee List", "ontology_class": "ElectionRangeRequest", "section": "Permanent Absentee List", "notes": "Request to be added to voluntary permanent absentee voter list; county clerk will automatically send ballot for each statewide election"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "New Mexico Application for Absentee Ballot / Solicitud para la Boleta de Ausente (NMAV-1, Rev. December 2023). Bilingual form (English/Spanish). Can complete online at NMVote.org. Only one application necessary. County clerk automatically sends ballot to mailing address on certificate of voter registration each time there is statewide election that includes precinct. Email and telephone are optional and only for county clerk use for questions related to application. Can request to be added to voluntary permanent absentee voter list. Fold, seal and mail or deliver application card to Office of the Clerk (County Clerk/Escribano del Condado)."
+}

@@ -1,0 +1,33 @@
+{
+  "state_code": "MA",
+  "state_name": "Massachusetts",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "Full Name", "ontology_class": "PersonName", "section": "1 - Voter Information", "notes": "Required"},
+    {"field_name": "Legal Voting Residence", "ontology_class": "ResidentialAddress", "section": "1 - Voter Information", "notes": "Required"},
+    {"field_name": "Date of Birth", "ontology_class": "DateOfBirth", "section": "1 - Voter Information", "notes": "Required"},
+    {"field_name": "Telephone Number", "ontology_class": "PhoneNumber", "section": "1 - Voter Information", "notes": "Optional"},
+    {"field_name": "E-mail Address", "ontology_class": "EmailAddress", "section": "1 - Voter Information", "notes": "Optional"},
+    {"field_name": "Mail Ballot to", "ontology_class": "BallotMailingAddress", "section": "2 - Ballot Information", "notes": "Address where ballot should be mailed"},
+    {"field_name": "All elections this year", "ontology_class": "ElectionRangeRequest", "section": "2 - Ballot Information", "notes": "Request for all elections; valid one calendar year"},
+    {"field_name": "All general elections (No primaries)", "ontology_class": "ElectionRangeRequest", "section": "2 - Ballot Information", "notes": "Only general elections"},
+    {"field_name": "A specific election", "ontology_class": "ElectionDate", "section": "2 - Ballot Information", "notes": "Date of specific election"},
+    {"field_name": "Party (for primary)", "ontology_class": "PartyAffiliation", "section": "2 - Ballot Information", "notes": "Only if requesting primary ballot; independent voters may vote in primary without registering"},
+    {"field_name": "State Primaries", "ontology_class": "PartyAffiliation", "section": "2 - Ballot Information", "notes": "Party for state primary"},
+    {"field_name": "Presidential Primary", "ontology_class": "PartyAffiliation", "section": "2 - Ballot Information", "notes": "Party for presidential primary"},
+    {"field_name": "Application being made by family member", "ontology_class": "BallotDeliveryAgent", "section": "3 - Special Circumstances", "notes": "Checkbox if family member making application"},
+    {"field_name": "Relationship to voter", "ontology_class": "AgentRelationship", "section": "3 - Special Circumstances", "notes": "Relationship if family member"},
+    {"field_name": "Voter is member of military or dependent", "ontology_class": "MilitaryOrOverseasStatus", "section": "3 - Special Circumstances", "notes": "Military on active duty or dependent"},
+    {"field_name": "Voter is Massachusetts citizen residing overseas", "ontology_class": "MilitaryOrOverseasStatus", "section": "3 - Special Circumstances", "notes": "Overseas citizen"},
+    {"field_name": "Voter is incarcerated (not for felony)", "ontology_class": "IncarcerationReason", "section": "3 - Special Circumstances", "notes": "Incarcerated but not for felony conviction"},
+    {"field_name": "Voter admitted to healthcare facility within 7 days", "ontology_class": "IllnessOrDisabilityReason", "section": "3 - Special Circumstances", "notes": "Admitted to healthcare facility; designated person to hand-deliver"},
+    {"field_name": "Designated person to hand-deliver", "ontology_class": "BallotDeliveryAgent", "section": "3 - Special Circumstances", "notes": "Person designated to hand-deliver ballot"},
+    {"field_name": "Voter required assistance due to physical disability", "ontology_class": "DisabilityStatus", "section": "3 - Special Circumstances", "notes": "Required assistance in completing application"},
+    {"field_name": "Assisting person's name", "ontology_class": "AssistantInformation", "section": "3 - Special Circumstances", "notes": "Name of assisting person"},
+    {"field_name": "Assisting person's address", "ontology_class": "AssistantInformation", "section": "3 - Special Circumstances", "notes": "Address of assisting person"},
+    {"field_name": "Signed", "ontology_class": "VoterSignature", "section": "4 - Signature", "notes": "Signed under penalty of perjury"},
+    {"field_name": "Date", "ontology_class": "SignatureDate", "section": "4 - Signature", "notes": "Date signed"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Massachusetts form can be completed by registered voter OR voter's family member (spouse, roommate, parent, sibling, child, aunt, uncle, niece, nephew, grandparent, grandchild, in-law). Use for registered voter unable to vote at polls due to absence, disability, or religious beliefs, OR non-registered voter who is MA citizen absent from state, active armed forces/merchant marines/spouse/dependent, or person confined except for felony. Applications can be mailed, hand-delivered, faxed, or emailed (signature must be visible). Independent voters may vote in primary without registering with party."
+}

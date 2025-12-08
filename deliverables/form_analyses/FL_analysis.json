@@ -1,0 +1,249 @@
+{
+  "state_code": "FL",
+  "state_name": "Florida",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Voter's Name",
+      "ontology_class": "PersonName",
+      "section": "Top Section - Voter Information",
+      "notes": "Full name"
+    },
+    {
+      "field_name": "Voter's Date of Birth",
+      "ontology_class": "DateOfBirth",
+      "section": "Top Section - Voter Information",
+      "notes": "MM/DD/YYYY format"
+    },
+    {
+      "field_name": "Voter's Florida driver license or FL ID card number",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "Top Section - Voter Information",
+      "notes": "FL DL or FL ID number"
+    },
+    {
+      "field_name": "Last 4 digits of Social Security Number",
+      "ontology_class": "Last4SSN",
+      "section": "Top Section - Voter Information",
+      "notes": "If no FL DL or FL ID"
+    },
+    {
+      "field_name": "Voter's Home Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Home address"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Part of home address"
+    },
+    {
+      "field_name": "State",
+      "ontology_class": "ResidentialAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Part of home address"
+    },
+    {
+      "field_name": "Zip code",
+      "ontology_class": "ResidentialAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Part of home address"
+    },
+    {
+      "field_name": "Voter's mailing address for ballot",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Only if different than home address"
+    },
+    {
+      "field_name": "Country, if outside US",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "For overseas mailing address"
+    },
+    {
+      "field_name": "Please update my residential address",
+      "ontology_class": "ResidentialAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Checkbox to update voter record"
+    },
+    {
+      "field_name": "Please update my mailing address",
+      "ontology_class": "MailingAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Checkbox to update voter record"
+    },
+    {
+      "field_name": "Phone number (optional)",
+      "ontology_class": "PhoneNumber",
+      "section": "Top Section - Voter Information",
+      "notes": "Optional phone"
+    },
+    {
+      "field_name": "Email address (optional)",
+      "ontology_class": "EmailAddress",
+      "section": "Top Section - Voter Information",
+      "notes": "Optional email"
+    },
+    {
+      "field_name": "Request good for all elections through end of calendar year",
+      "ontology_class": "ElectionRangeRequest",
+      "section": "Top Section - Voter Information",
+      "notes": "Through end of calendar year of next general election"
+    },
+    {
+      "field_name": "List specific elections",
+      "ontology_class": "SpecificElectionIdentifier",
+      "section": "Top Section - Voter Information",
+      "notes": "If only want ballot for specific elections"
+    },
+    {
+      "field_name": "Voter's Signature",
+      "ontology_class": "VoterSignature",
+      "section": "Top Section - Voter Information",
+      "notes": "Not required if absent uniformed services/overseas voter or if request made by designee"
+    },
+    {
+      "field_name": "Date",
+      "ontology_class": "SignatureDate",
+      "section": "Top Section - Voter Information",
+      "notes": "Date of signature"
+    },
+    {
+      "field_name": "Designee's Name",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Person requesting ballot for someone else"
+    },
+    {
+      "field_name": "Designee's Home Address",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Designee address"
+    },
+    {
+      "field_name": "Designee City, State, Zip",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Part of designee address"
+    },
+    {
+      "field_name": "Designee's driver license or ID card number",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Designee DL or ID"
+    },
+    {
+      "field_name": "Designee's last 4 digits of Social Security Number",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "If no DL or ID"
+    },
+    {
+      "field_name": "Designee Phone number (optional)",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Designee phone"
+    },
+    {
+      "field_name": "Designee Email address (optional)",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Designee email"
+    },
+    {
+      "field_name": "Designee's relationship: Spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Parent",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Child",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Grandparent",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Grandchild",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Sibling",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Parent of voter's spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Child of voter's spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Grandparent of voter's spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Grandchild of voter's spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Sibling of voter's spouse",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Voter's legal guardian",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's relationship: Designee for a voter with a disability",
+      "ontology_class": "AgentRelationship",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Relationship option"
+    },
+    {
+      "field_name": "Designee's Signature",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Designee must sign and affirm voter directly instructed them"
+    },
+    {
+      "field_name": "Designee Date",
+      "ontology_class": "BallotDeliveryAgent",
+      "section": "Bottom Section - Designee Information",
+      "notes": "Date designee signed"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Florida form is very simple and streamlined. Request is valid for all elections through end of calendar year of next general election unless specific elections listed. Voter signature not required for absent uniformed services/overseas voters or if request made by designee. Designee relationships are very specifically enumerated with many family relationship options."
+}

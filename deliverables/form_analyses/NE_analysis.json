@@ -1,0 +1,33 @@
+{
+  "state_code": "NE",
+  "state_name": "Nebraska",
+  "form_analyzed": true,
+  "fields": [
+    {"field_name": "Last", "ontology_class": "LastName", "section": "1 - Voter Information", "notes": "Required"},
+    {"field_name": "First", "ontology_class": "FirstName", "section": "1 - Voter Information", "notes": "Required"},
+    {"field_name": "Middle (name or initial)", "ontology_class": "MiddleName", "section": "1 - Voter Information", "notes": "Middle name or initial"},
+    {"field_name": "Suffix", "ontology_class": "NameSuffix", "section": "1 - Voter Information", "notes": "Jr, III, if any"},
+    {"field_name": "Date of Birth", "ontology_class": "DateOfBirth", "section": "1 - Voter Information", "notes": "mm/dd/yyyy format - Required"},
+    {"field_name": "Address Where You Live (Residence)", "ontology_class": "ResidentialAddress", "section": "2 - Address", "notes": "Street address where registered - Required"},
+    {"field_name": "Apt.", "ontology_class": "ResidentialAddress", "section": "2 - Address", "notes": "Apartment or lot number"},
+    {"field_name": "City", "ontology_class": "ResidentialAddress", "section": "2 - Address", "notes": "City - MN [should be NE]"},
+    {"field_name": "Zip Code", "ontology_class": "ResidentialAddress", "section": "2 - Address", "notes": "Zip code"},
+    {"field_name": "Nebraska Driver's License or State ID Number", "ontology_class": "DriverLicenseNumber", "section": "3 - Identification", "notes": "Must provide one form of ID"},
+    {"field_name": "Enclosed photocopy of other acceptable photo identification", "ontology_class": "CopyOfPhotoID", "section": "3 - Identification", "notes": "See page 2 for acceptable ID list"},
+    {"field_name": "Enclosed Reasonable Impediment Certification", "ontology_class": "StatementNoIDAvailable", "section": "3 - Identification", "notes": "If reasonable impediment prevents obtaining photo ID"},
+    {"field_name": "Same as above", "ontology_class": "BallotMailingAddress", "section": "4 - Send Voter's Ballot To", "notes": "Same as residence address - Required (select one)"},
+    {"field_name": "Mailing Address", "ontology_class": "BallotMailingAddress", "section": "4 - Send Voter's Ballot To", "notes": "Different mailing address"},
+    {"field_name": "Mailing Apartment or Lot", "ontology_class": "BallotMailingAddress", "section": "4 - Send Voter's Ballot To", "notes": "Apartment or lot number"},
+    {"field_name": "Mailing City, State, ZIP", "ontology_class": "BallotMailingAddress", "section": "4 - Send Voter's Ballot To", "notes": "City, State, ZIP for mailing"},
+    {"field_name": "Phone Number", "ontology_class": "PhoneNumber", "section": "5 - Contact Information", "notes": "County election office uses to contact about application; check box if private"},
+    {"field_name": "Email Address", "ontology_class": "EmailAddress", "section": "5 - Contact Information", "notes": "County election office uses to contact about application; check box if private"},
+    {"field_name": "Statewide General Election", "ontology_class": "ElectionType", "section": "6 - Election Request", "notes": "Checkbox for general election"},
+    {"field_name": "Special Election on (Date)", "ontology_class": "ElectionDate", "section": "6 - Election Request", "notes": "Specify date of special election"},
+    {"field_name": "Signature of Voter or Agent", "ontology_class": "VoterSignature", "section": "Signature", "notes": "Required; under penalty of election falsification"},
+    {"field_name": "Date", "ontology_class": "SignatureDate", "section": "Signature", "notes": "Date signed"},
+    {"field_name": "Printed Name of Agent", "ontology_class": "BallotDeliveryAgent", "section": "Signature", "notes": "If applicable; agent may request ballots for up to 2 voters per election"},
+    {"field_name": "Relationship to Voter", "ontology_class": "AgentRelationship", "section": "Signature", "notes": "Agent's relationship to voter"}
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Nebraska Secretary of State Early Voting Ballot Application (Updated July 2024). Applications must be physically signed. Can scan/email, mail, or fax to county election office. Can request ballot starting 120 days before election; must submit by close of business on second Friday before election. Must provide Nebraska driver's license/state ID number OR photocopy of acceptable photo ID OR reasonable impediment certification - ballot will not be issued without ID. Acceptable photo IDs include Nebraska DL/ID, US passport, military/veteran's ID, tribal ID, Nebraska political subdivision ID, Nebraska college/university ID, or hospital/care facility record. Free state ID available at DMV for voting purposes; free birth certificates available from DHHS if needed for ID. Reasonable impediments: disability/illness preventing ID obtainment, lack of birth certificate with difficulty obtaining, or religious objection to photography. Contact info can be marked private. Agent may request ballots for up to 2 voters per election. Penalty for election falsification: up to 2 years imprisonment and 12 months post-release supervision, fine up to $10,000, or both. Check ballot status at ne.gov/go/votercheck."
+}

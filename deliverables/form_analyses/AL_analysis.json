@@ -1,0 +1,207 @@
+{
+  "state_code": "AL",
+  "state_name": "Alabama",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Last Name",
+      "ontology_class": "LastName",
+      "section": "General Voter Information",
+      "notes": "Required field"
+    },
+    {
+      "field_name": "First Name",
+      "ontology_class": "FirstName",
+      "section": "General Voter Information",
+      "notes": "Required field"
+    },
+    {
+      "field_name": "Middle or Maiden Name",
+      "ontology_class": "MiddleName",
+      "section": "General Voter Information",
+      "notes": "Middle or maiden name"
+    },
+    {
+      "field_name": "Street Address (Physical Address)",
+      "ontology_class": "ResidentialAddress",
+      "section": "General Voter Information",
+      "notes": "Physical address where registered to vote, no P.O. Box"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "General Voter Information",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "State",
+      "ontology_class": "ResidentialAddress",
+      "section": "General Voter Information",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Zip Code",
+      "ontology_class": "ResidentialAddress",
+      "section": "General Voter Information",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Mail my ballot to this address",
+      "ontology_class": "BallotMailingAddress",
+      "section": "General Voter Information",
+      "notes": "Ballot mailing address if different from street address"
+    },
+    {
+      "field_name": "Date of Birth",
+      "ontology_class": "DateOfBirth",
+      "section": "General Voter Information",
+      "notes": "Month/Day/Year format"
+    },
+    {
+      "field_name": "Home/Cell Telephone Number",
+      "ontology_class": "PhoneNumber",
+      "section": "General Voter Information",
+      "notes": "Contact phone number"
+    },
+    {
+      "field_name": "Email",
+      "ontology_class": "EmailAddress",
+      "section": "General Voter Information",
+      "notes": "Email address"
+    },
+    {
+      "field_name": "Driver's License Number",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "General Voter Information",
+      "notes": "Alabama driver's license number"
+    },
+    {
+      "field_name": "Last 4 digits of SSN if no AL Driver's License",
+      "ontology_class": "Last4SSN",
+      "section": "General Voter Information",
+      "notes": "Alternative to driver's license"
+    },
+    {
+      "field_name": "Primary Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for primary election"
+    },
+    {
+      "field_name": "Select Party: Democratic Party",
+      "ontology_class": "PartyAffiliation",
+      "section": "Election Selection",
+      "notes": "Party selection for primary"
+    },
+    {
+      "field_name": "Select Party: Republican Party",
+      "ontology_class": "PartyAffiliation",
+      "section": "Election Selection",
+      "notes": "Party selection for primary"
+    },
+    {
+      "field_name": "Amendments Only",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Option to vote on amendments only"
+    },
+    {
+      "field_name": "Primary Runoff Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Checkbox for primary runoff with party selection"
+    },
+    {
+      "field_name": "General Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Election held in November"
+    },
+    {
+      "field_name": "Special Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Selection",
+      "notes": "Special election with date to specify"
+    },
+    {
+      "field_name": "I expect to be out of the county or the state on election day",
+      "ontology_class": "OutOfCountyTravelReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Photo ID will be required"
+    },
+    {
+      "field_name": "I am physically incapacitated",
+      "ontology_class": "IllnessOrDisabilityReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Multiple variations of this reason with different photo ID requirements"
+    },
+    {
+      "field_name": "I expect to work a shift which has at least ten (10) hours",
+      "ontology_class": "WorkConflictReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Photo ID required"
+    },
+    {
+      "field_name": "I am currently incarcerated",
+      "ontology_class": "IncarcerationReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Must not be convicted of felony involving moral turpitude; Photo ID required"
+    },
+    {
+      "field_name": "I have been appointed as an election officer",
+      "ontology_class": "ElectionOfficialDutiesReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "At polling place other than regular; Photo ID required"
+    },
+    {
+      "field_name": "I am a student at an educational institution",
+      "ontology_class": "StudentStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Outside county of permanent residence; Photo ID required"
+    },
+    {
+      "field_name": "I am a caregiver for a family member",
+      "ontology_class": "CaregiverForDisabledPersonReason",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Family member confined to home; Photo ID required"
+    },
+    {
+      "field_name": "I am an elderly voter aged 65 or older",
+      "ontology_class": "AgeRequirement",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Photo ID NOT required for this reason"
+    },
+    {
+      "field_name": "I am a voter with a disability",
+      "ontology_class": "DisabilityStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Photo ID NOT required; detailed disability description provided"
+    },
+    {
+      "field_name": "I am a member of the Armed Forces",
+      "ontology_class": "MilitaryOrOverseasStatus",
+      "section": "Reason for Absentee Ballot",
+      "notes": "Or spouse/dependent; UOCAVA voter; Photo ID NOT required"
+    },
+    {
+      "field_name": "Voter's Signature or Mark",
+      "ontology_class": "VoterSignature",
+      "section": "Signature",
+      "notes": "Required signature"
+    },
+    {
+      "field_name": "Witness Signature",
+      "ontology_class": "WitnessInformation",
+      "section": "Signature",
+      "notes": "Required if voter signs by mark"
+    },
+    {
+      "field_name": "Print Witness Name",
+      "ontology_class": "WitnessName",
+      "section": "Signature",
+      "notes": "Required if voter signs by mark"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Alabama requires photo ID copy for most absentee ballot reasons (except elderly 65+, voters with disabilities, and military/overseas). Form explicitly states only medical emergency applications may be submitted by voter's designee. Witness signature required only if voter signs by mark rather than signature."
+}

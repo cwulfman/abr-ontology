@@ -1,0 +1,177 @@
+{
+  "state_code": "IA",
+  "state_name": "Iowa",
+  "form_analyzed": true,
+  "fields": [
+    {
+      "field_name": "Last Name",
+      "ontology_class": "LastName",
+      "section": "Your Name and Date of Birth",
+      "notes": "Required"
+    },
+    {
+      "field_name": "First Name",
+      "ontology_class": "FirstName",
+      "section": "Your Name and Date of Birth",
+      "notes": "Required"
+    },
+    {
+      "field_name": "Middle Name",
+      "ontology_class": "MiddleName",
+      "section": "Your Name and Date of Birth",
+      "notes": "Middle name"
+    },
+    {
+      "field_name": "Suffix",
+      "ontology_class": "NameSuffix",
+      "section": "Your Name and Date of Birth",
+      "notes": "Jr., Sr., etc."
+    },
+    {
+      "field_name": "Date of Birth",
+      "ontology_class": "DateOfBirth",
+      "section": "Your Name and Date of Birth",
+      "notes": "Month, day, year format - Required"
+    },
+    {
+      "field_name": "Iowa Driver's License or Non-Operator ID Number",
+      "ontology_class": "DriverLicenseNumber",
+      "section": "ID Number - Complete one",
+      "notes": "Option 1 for voter verification"
+    },
+    {
+      "field_name": "Four-digit Voter PIN",
+      "ontology_class": "VoterPIN",
+      "section": "ID Number - Complete one",
+      "notes": "Found only on Voter Identification Card - Option 2 for voter verification"
+    },
+    {
+      "field_name": "Home Street Address",
+      "ontology_class": "ResidentialAddress",
+      "section": "Your Iowa Residential Address",
+      "notes": "Include apt, lot, etc. if applicable - Required"
+    },
+    {
+      "field_name": "City",
+      "ontology_class": "ResidentialAddress",
+      "section": "Your Iowa Residential Address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "Zip",
+      "ontology_class": "ResidentialAddress",
+      "section": "Your Iowa Residential Address",
+      "notes": "Part of residential address"
+    },
+    {
+      "field_name": "County",
+      "ontology_class": "ResidentialAddress",
+      "section": "Your Iowa Residential Address",
+      "notes": "Must be registered to vote in county to receive absentee ballot"
+    },
+    {
+      "field_name": "Mailing Address/P.O. Box",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Where Your Absentee Ballot Should Be Mailed",
+      "notes": "If different than residential address above"
+    },
+    {
+      "field_name": "Mailing City",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Where Your Absentee Ballot Should Be Mailed",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing State",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Where Your Absentee Ballot Should Be Mailed",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Mailing Zip",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Where Your Absentee Ballot Should Be Mailed",
+      "notes": "Part of mailing address"
+    },
+    {
+      "field_name": "Country (other than USA)",
+      "ontology_class": "BallotMailingAddress",
+      "section": "Where Your Absentee Ballot Should Be Mailed",
+      "notes": "If mailing address outside USA"
+    },
+    {
+      "field_name": "Phone",
+      "ontology_class": "PhoneNumber",
+      "section": "Contact Info",
+      "notes": "Important - with DO NOT ADD TO VOTER RECORD option"
+    },
+    {
+      "field_name": "Email",
+      "ontology_class": "EmailAddress",
+      "section": "Contact Info",
+      "notes": "Important - with DO NOT ADD TO VOTER RECORD option"
+    },
+    {
+      "field_name": "DO NOT ADD THIS INFORMATION TO MY VOTER RECORD",
+      "ontology_class": "StatementNoIDAvailable",
+      "section": "Contact Info",
+      "notes": "Checkbox to keep contact info private"
+    },
+    {
+      "field_name": "Election Date",
+      "ontology_class": "ElectionDate",
+      "section": "Election Date or Type",
+      "notes": "Specific date of election"
+    },
+    {
+      "field_name": "General Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Date or Type",
+      "notes": "Checkbox for general election"
+    },
+    {
+      "field_name": "Primary Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Date or Type",
+      "notes": "Checkbox for primary"
+    },
+    {
+      "field_name": "City/School Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Date or Type",
+      "notes": "Checkbox for city or school election"
+    },
+    {
+      "field_name": "Special Election",
+      "ontology_class": "ElectionType",
+      "section": "Election Date or Type",
+      "notes": "Checkbox with date field"
+    },
+    {
+      "field_name": "Democratic Party",
+      "ontology_class": "PartyAffiliation",
+      "section": "Primary Election Only",
+      "notes": "Party selection for primary"
+    },
+    {
+      "field_name": "Republican Party",
+      "ontology_class": "PartyAffiliation",
+      "section": "Primary Election Only",
+      "notes": "Party selection for primary"
+    },
+    {
+      "field_name": "Signature",
+      "ontology_class": "VoterSignature",
+      "section": "Requester Affidavit",
+      "notes": "Required signature affirming eligibility"
+    },
+    {
+      "field_name": "Date",
+      "ontology_class": "SignatureDate",
+      "section": "Requester Affidavit",
+      "notes": "Date form was signed"
+    }
+  ],
+  "unclassifiable_fields": [],
+  "notes": "Iowa form uses note 'IO' in PDF but this is Iowa (IA). Form requires voter verification number (Iowa DL/Non-Operator ID OR four-digit Voter PIN from Voter ID Card). Any voter may request an Iowa Voter ID Card by contacting County Auditor. Application must be received by County Auditor no later than 5:00 p.m. 15 days before election. Powers of attorney do not have legal authority to request absentee ballot on behalf of another. Contact info can be kept off voter record by checking box."
+}
