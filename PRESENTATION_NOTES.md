@@ -1,22 +1,13 @@
-# ABR State Requirements Analysis - Presentation Notes
-
-## For: Rock the Vote Administrators
-## Prepared by: OSET Institute
-
+# ABR State Requirements Analysis
+## Prepared by: Clifford Wulfman, OSET Institute
 ---
 
 ## Overview
-
-This analysis demonstrates the complexity and systematic approach needed for overhauling the Rocky absentee ballot request module. The spreadsheet (`ABR_State_Requirements_Analysis.xlsx`) shows what information each state requires on their absentee ballot request forms.
+I analyzed the ABR forms from the 34 states that have them and classified the kinds of information they collect into eleven categories. From these I developed a formal ontology that describes the ABR form for each state in terms of the information it requires.  This representation should simplify the task of identifying common requirements and streamlining Rocky's information-gathering workflow.
 
 ## Key Findings
 
-### Coverage
-- **34 of 50 states** have been analyzed and modeled in the ontology
-- **16 states** still need to be analyzed
-- This represents **68% coverage** of all US states
-
-### Complexity
+### Information Categories
 The analysis identifies **11 major categories** of information that states may require:
 
 1. **Election Context** - Which elections, dates, types
@@ -50,28 +41,8 @@ The analysis identifies **11 major categories** of information that states may r
 - **Arkansas, Georgia, Louisiana, New Jersey** have minimal requirements (2 types)
 - **Idaho, Maine, New Mexico, Montana** have very few requirements (0-1 types analyzed)
 
-## Why a Systematic Approach is Needed
-
-### Problem: Current Ad-Hoc System
-
-Without a systematic ontology-based approach:
-- Each state's requirements must be handled as a special case
-- Changes in state laws require manual code updates throughout the system
-- No consistent way to validate completeness of data collection
-- Difficult to maintain and test
-- High risk of errors and omissions
-
-### Solution: Ontology-Based System
-
-The ontology provides:
-- **Formal specification** of what each state requires
-- **Machine-readable format** that can drive the software directly
-- **Systematic coverage** ensuring no requirements are missed
-- **Easy maintenance** - update the ontology, not the code
-- **Testable** - can automatically verify that all requirements are met
-- **Scalable** - easy to add new states or update existing ones
-
 ## The Spreadsheet Explained
+From the ontology, I have compiled a spreadsheet that makes the state-by-state requirements easier to see and compare.
 
 ### How to Read It
 
@@ -99,66 +70,17 @@ Columns are grouped by major category (shown in the top header row):
 - **Green cells**: Required information / Analyzed state
 - **Empty cells**: Not required
 - **Red cells**: State not yet analyzed
-- **Gray cells**: Not applicable (state not analyzed)
+- **Gray cells**: Not applicable (state not analyzed because no ABR form available)
 - **Gray bottom row**: Summary statistics
 
-## Business Case for Rewrite
+## Recommendations
+The ontology is more than a source of data for a spreadsheet, however.  It formalizes the analysis of state requirements into a machine-actionable form that can be used to improve Rocky's functionality.
 
-### Current Situation
-The existing Rocky module likely handles state requirements through:
-- Hard-coded logic for each state
-- Difficult-to-maintain configuration files
-- Incomplete or outdated state requirements
-- Manual updates when state laws change
+The ontology provides:
+- **Formal specification** of what each state requires
+- **Machine-readable format** that can drive the software directly
+- **Systematic coverage** ensuring no requirements are missed
+- **Easy maintenance** - update the ontology, not the code
+- **Testablity** - can automatically verify that all requirements are met
+- **Scalablity** - easy to add new states or update existing ones
 
-### Proposed Approach
-A systematic rewrite based on this ontology would:
-1. **Use formal specifications** (the ontology) as the single source of truth
-2. **Generate forms dynamically** based on state requirements
-3. **Ensure completeness** - systematic approach catches all requirements
-4. **Simplify maintenance** - update ontology, not code
-5. **Enable validation** - automatically verify forms collect all required data
-6. **Support scalability** - easy to add remaining 16 states
-
-### Return on Investment
-
-**Short-term benefits**:
-- Correct and complete forms for all 50 states
-- Reduced development and testing time
-- Fewer errors and user complaints
-
-**Long-term benefits**:
-- Easy updates when state laws change
-- Scalable to new requirements
-- Reusable ontology for other voting initiatives
-- Professional, systematic approach demonstrates OSET's technical capability
-
-## Questions & Answers
-
-**Q: Why do some states show "N/A" for everything?**
-A: Those 16 states haven't been analyzed yet. They need to be added to complete the system.
-
-**Q: Why do requirements vary so much across states?**
-A: Each state sets its own election laws and absentee ballot requirements. This variability is exactly why a systematic approach is needed.
-
-**Q: How does this help voters?**
-A: By ensuring Rocky collects exactly the information each state requires - no more, no less - we reduce errors and rejections of absentee ballot requests.
-
-**Q: What's next?**
-A:
-1. Complete analysis of remaining 16 states
-2. Design software architecture based on ontology
-3. Implement dynamic form generation
-4. Test with actual state forms
-5. Deploy updated Rocky module
-
----
-
-## Contact
-
-For technical questions about this analysis:
-- John Sebes, CIO, OSET Institute
-- [Contact information]
-
-For questions about Rock the Vote's absentee ballot program:
-- [Rock the Vote contact]
