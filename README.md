@@ -1,24 +1,40 @@
-# ABR Ontology
+# ABR Forms Analysis
 
-This repository contains an ontology of absentee-ballot-request forms,
-for use by OSET and Rock the Vote to systematically compare what
-information different states require on their absentee ballot request
-forms.
+**Date**: 2025-12-09
+**Prepared by**: Clifford Wulfman, OSET Institute <cliff@osetinstitute.org>
 
-## Repository Contents
+---
 
-rdf
-:   a directory containing the ontology
+## ABR Ontology
 
-sparql
-:   a directory containing sample SPARQL queries using the ontology
+An OWL ontology of US absentee ballot request (ABR) form types and the information types they capture.
 
-doc
-:   documents describing the ontology
+- **abr_ontology.ttl**: The ontology.  Each state's ABR form is defined as a restriction on a general ABRForm class, one that declares what specific information it requires.
 
-## How To Use
+- **states.ttl**: supplementary definition of states
 
-- Load the ontology file abr~ontology~.ttl into a triple store (such as
-  GraphDB)
-- Use SPARQL to browse relationships; see the sample SPARQL queries to
-  get started
+---
+
+## Supporting Documentation
+
+**Primary Deliverable**:
+- **ABR_State_Requirements_Analysis.xlsx** 
+  - 34 states analyzed
+  - 74 information type columns
+  - Color-coded for easy reading
+  - Summary statistics included
+
+**Per-State Reports** (state_reports/):
+- 34 markdown files, one per state
+- Fields organized by ontology category
+- Detailed notes and requirements
+- Section information preserved
+
+**JSON Analyses** (form_analyses/):
+- 34 JSON files with structured field data
+- Machine-readable format
+- Complete field metadata
+- Zero unclassifiable fields
+
+---
+
