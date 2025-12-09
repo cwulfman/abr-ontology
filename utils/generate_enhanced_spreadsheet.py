@@ -275,10 +275,10 @@ def create_excel_spreadsheet(state_info, output_file):
     )
 
     # Create header rows
-    row1 = ["State", "Code", "Form\nDefined"]
-    row2 = ["", "", ""]
+    row1 = ["State", "Code"]
+    row2 = ["", ""]
 
-    col_idx = 4
+    col_idx = 3
     category_ranges = {}
 
     for category, info_types in INFO_HIERARCHY.items():
@@ -299,7 +299,7 @@ def create_excel_spreadsheet(state_info, output_file):
         cell1 = ws.cell(row=1, column=col)
         cell2 = ws.cell(row=2, column=col)
 
-        if col <= 3:
+        if col <= 2:
             cell1.fill = header_fill
             cell1.font = header_font
             cell2.fill = header_fill
@@ -318,7 +318,6 @@ def create_excel_spreadsheet(state_info, output_file):
     # Merge category headers
     ws.merge_cells(range_string='A1:A2')
     ws.merge_cells(range_string='B1:B2')
-    ws.merge_cells(range_string='C1:C2')
 
     for category, (start_col, end_col) in category_ranges.items():
         if start_col < end_col:
@@ -329,22 +328,15 @@ def create_excel_spreadsheet(state_info, output_file):
                 end_column=end_col
             )
 
-    # Add data rows
+    # Add data rows (only for states with forms)
     row_num = 3
-    for state_code in sorted(ALL_STATES):
+    for state_code in sorted(state_info.keys()):
         row_data = [STATE_NAMES[state_code], state_code]
-
-        # Form Defined
-        has_form = state_code in state_info
-        row_data.append("Yes" if has_form else "No")
 
         # Information types
         for category, info_types in INFO_HIERARCHY.items():
             for info_type in info_types:
-                if has_form:
-                    row_data.append("✓" if info_type in state_info[state_code] else "")
-                else:
-                    row_data.append("N/A")
+                row_data.append("✓" if info_type in state_info[state_code] else "")
 
         ws.append(row_data)
 
@@ -354,23 +346,15 @@ def create_excel_spreadsheet(state_info, output_file):
             cell.border = border
             cell.alignment = center_align
 
-            if col == 3:  # Form Defined column
-                if cell.value == "Yes":
-                    cell.fill = yes_fill
-                else:
-                    cell.fill = no_fill
-            elif col > 3:
+            if col > 2:  # Information type columns
                 if cell.value == "✓":
                     cell.fill = yes_fill
                     cell.font = Font(color="006100", bold=True, size=12)
-                elif cell.value == "N/A":
-                    cell.fill = na_fill
-                    cell.font = Font(color="999999")
 
         row_num += 1
 
     # Add summary row
-    summary_row = ["TOTAL", "", f"{len(state_info)} of {len(ALL_STATES)}"]
+    summary_row = ["TOTAL", f"{len(state_info)} states"]
     for category, info_types in INFO_HIERARCHY.items():
         for info_type in info_types:
             count = sum(1 for state in state_info.keys() if info_type in state_info[state])
@@ -389,27 +373,25 @@ def create_excel_spreadsheet(state_info, output_file):
     # Adjust column widths
     ws.column_dimensions['A'].width = 18
     ws.column_dimensions['B'].width = 6
-    ws.column_dimensions['C'].width = 10
-    for col in range(4, col_idx):
+    for col in range(3, col_idx):
         ws.column_dimensions[get_column_letter(col)].width = 12
 
     # Freeze panes
-    ws.freeze_panes = 'D3'
+    ws.freeze_panes = 'C3'
 
     # Save workbook
     wb.save(output_file)
     print(f"Excel spreadsheet created: {output_file}")
 
 def main():
-    script_dir = Path(__file__).parent
+    script_dir = Path(__file__).parent.parent  # Go up one level from utils/
     ontology_file = script_dir / 'rdf' / 'abr_ontology.ttl'
-    output_file = script_dir / 'ABR_State_Requirements_Analysis.xlsx'
+    output_file = script_dir / 'deliverables' / 'ABR_State_Requirements_Analysis.xlsx'
 
     print("Parsing ABR ontology...")
     state_info = parse_ontology(ontology_file)
 
-    print(f"\nStates with forms analyzed: {len(state_info)} of {len(ALL_STATES)}")
-    print(f"States without forms: {len(ALL_STATES) - len(state_info)}")
+    print(f"\nStates with forms analyzed: {len(state_info)}")
 
     print("\nGenerating Excel spreadsheet...")
     create_excel_spreadsheet(state_info, output_file)
